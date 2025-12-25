@@ -1,5 +1,6 @@
 import React from "react";
 import Link from "next/link";
+import Image from "next/image";
 import { Navigation } from "../components/nav";
 import { Card } from "../components/card";
 import { Github, Linkedin, Mail, Phone, MapPin } from "lucide-react";
@@ -10,16 +11,32 @@ export default function ProfilePage() {
       <Navigation />
       <div className="px-6 pt-20 mx-auto space-y-8 max-w-7xl lg:px-8 md:space-y-16 md:pt-24 lg:pt-32">
         {/* Header */}
-        <div className="max-w-2xl mx-auto lg:mx-0">
-          <h2 className="text-3xl font-bold tracking-tight text-zinc-100 sm:text-4xl">
-            M. Nor Hidayat
-          </h2>
-          <p className="mt-4 text-xl text-zinc-300">
-            Senior Technical Architect
-          </p>
-          <p className="mt-2 text-zinc-400">
-            10+ years transforming architectural visions into precise, construction-ready documentation
-          </p>
+        <div className="max-w-4xl mx-auto">
+          <div className="flex flex-col md:flex-row items-center md:items-start gap-8">
+            {/* Profile Photo */}
+            <div className="relative w-48 h-48 rounded-full overflow-hidden border-4 border-zinc-800 flex-shrink-0">
+              <Image
+                src="/Profile Photo.png"
+                alt="M. Nor Hidayat"
+                fill
+                className="object-cover"
+                priority
+              />
+            </div>
+
+            {/* Text Content */}
+            <div className="flex-1 text-center md:text-left">
+              <h2 className="text-3xl font-bold tracking-tight text-zinc-100 sm:text-4xl">
+                M. Nor Hidayat
+              </h2>
+              <p className="mt-4 text-xl text-zinc-300">
+                Senior Technical Architect
+              </p>
+              <p className="mt-2 text-zinc-400">
+                10+ years transforming architectural visions into precise, construction-ready documentation
+              </p>
+            </div>
+          </div>
         </div>
         <div className="w-full h-px bg-zinc-800" />
 
