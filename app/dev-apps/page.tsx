@@ -9,19 +9,19 @@ const apps = [
   {
     title: "Brutalist Notes",
     description: "Note-taking and documentation system designed for technical professionals. Capture, organize, and retrieve your architectural notes with ease.",
-    url: "https://brutalist-notes.vercel.app", // Replace with your actual Vercel URL
+    url: "https://brutalist-note.vercel.app",
     logo: "/Apps icon.png",
   },
   {
-    title: "QodeSnipped",
-    description: "Code snippet management tool for technical workflows. Save and organize your most-used code snippets for quick access.",
-    url: "https://qodesnipped.vercel.app", // Replace with your actual Vercel URL
+    title: "Healing Journal",
+    description: "Personal wellness and reflection journal. Track your daily thoughts, emotions, and journey towards better mental health and self-awareness.",
+    url: "https://healing-journal-theta.vercel.app",
     logo: "/Apps icon.png",
   },
   {
-    title: "PlanoraNotta",
-    description: "Project planning and organization application. Manage your architectural projects, tasks, and documentation in one place.",
-    url: "https://planoranotta.vercel.app", // Replace with your actual Vercel URL
+    title: "Monolith Ledge",
+    description: "Project planning and organization application. Manage your architectural projects, tasks, and documentation in one powerful platform.",
+    url: "https://monolith-ledge.vercel.app",
     logo: "/Apps icon.png",
   },
 ];
