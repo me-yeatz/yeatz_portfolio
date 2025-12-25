@@ -4,21 +4,26 @@ import Image from "next/image";
 import { Navigation } from "../components/nav";
 import { Card } from "../components/card";
 
-// Sample apps data - you'll add your real apps here
+// Your Vercel deployed apps
 const apps = [
   {
-    title: "App Name 1",
-    description: "Brief description of your app and what it does",
-    url: "https://your-app-1.vercel.app",
-    logo: "/M_Logo_Img03.png", // Use image path instead of emoji
+    title: "Brutalist Notes",
+    description: "Note-taking and documentation system designed for technical professionals. Capture, organize, and retrieve your architectural notes with ease.",
+    url: "https://brutalist-notes.vercel.app", // Replace with your actual Vercel URL
+    logo: "/Apps icon.png",
   },
   {
-    title: "App Name 2",
-    description: "Brief description of your app and what it does",
-    url: "https://your-app-2.vercel.app",
-    logo: "/M_Logo_Img03.png",
+    title: "QodeSnipped",
+    description: "Code snippet management tool for technical workflows. Save and organize your most-used code snippets for quick access.",
+    url: "https://qodesnipped.vercel.app", // Replace with your actual Vercel URL
+    logo: "/Apps icon.png",
   },
-  // Add more apps here
+  {
+    title: "PlanoraNotta",
+    description: "Project planning and organization application. Manage your architectural projects, tasks, and documentation in one place.",
+    url: "https://planoranotta.vercel.app", // Replace with your actual Vercel URL
+    logo: "/Apps icon.png",
+  },
 ];
 
 export default function DevAppsPage() {
@@ -40,15 +45,23 @@ export default function DevAppsPage() {
         {/* Philosophy Section */}
         <div className="max-w-4xl mx-auto space-y-4">
           <h3 className="text-2xl font-bold text-zinc-100">My Philosophy</h3>
-          <div className="p-6 bg-zinc-900 border border-zinc-800 rounded-lg">
-            <p className="text-zinc-400 leading-relaxed">
-              [Add your philosophy about creating apps here - your approach, principles,
-              what drives you to build applications, and what makes your apps unique]
-            </p>
-            <p className="mt-4 text-zinc-400 leading-relaxed">
-              I believe in creating apps that are [user-friendly / powerful / innovative / accessible]...
-            </p>
-          </div>
+          <Card>
+            <div className="p-6">
+              <p className="text-zinc-400 leading-relaxed">
+                As a self-taught developer with 10+ years in architecture, I create applications that solve real-world
+                problems I've encountered in my professional practice. Each app is born from a genuine need to improve
+                workflows and boost productivity for technical professionals.
+              </p>
+              <p className="mt-4 text-zinc-400 leading-relaxed">
+                I believe in <span className="text-zinc-100 font-semibold">"AI as teammates, not tools"</span> -
+                building with soul, crediting all contributors, and creating applications that enhance human capability
+                rather than replace it. My apps bridge the gap between traditional architecture and modern digital innovation.
+              </p>
+              <p className="mt-4 text-zinc-400 leading-relaxed italic">
+                Every line of code is crafted to make your work easier, your processes smoother, and your creativity unbound.
+              </p>
+            </div>
+          </Card>
         </div>
 
         <div className="w-full h-px bg-zinc-800" />
