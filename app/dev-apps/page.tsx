@@ -1,5 +1,6 @@
 import Link from "next/link";
 import React from "react";
+import Image from "next/image";
 import { Navigation } from "../components/nav";
 import { Card } from "../components/card";
 
@@ -9,13 +10,13 @@ const apps = [
     title: "App Name 1",
     description: "Brief description of your app and what it does",
     url: "https://your-app-1.vercel.app",
-    icon: "🚀",
+    logo: "/M_Logo_Img03.png", // Use image path instead of emoji
   },
   {
     title: "App Name 2",
     description: "Brief description of your app and what it does",
     url: "https://your-app-2.vercel.app",
-    icon: "💡",
+    logo: "/M_Logo_Img03.png",
   },
   // Add more apps here
 ];
@@ -60,7 +61,15 @@ export default function DevAppsPage() {
               <Card key={app.title}>
                 <Link href={app.url} target="_blank" rel="noopener noreferrer">
                   <article className="relative w-full h-full p-6 hover:bg-zinc-900/50 transition-colors">
-                    <div className="text-4xl mb-4">{app.icon}</div>
+                    <div className="w-16 h-16 mb-4 relative">
+                      <Image
+                        src={app.logo}
+                        alt={app.title}
+                        width={64}
+                        height={64}
+                        className="object-contain"
+                      />
+                    </div>
                     <h3 className="text-xl font-bold text-zinc-100 mb-2">
                       {app.title}
                     </h3>
