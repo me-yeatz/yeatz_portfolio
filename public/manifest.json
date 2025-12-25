@@ -1,0 +1,24 @@
+{
+  "name": "me.yeatz - Portfolio",
+  "short_name": "me.yeatz",
+  "description": "Full-stack developer crafting web applications and sharing creative projects",
+  "start_url": "/",
+  "display": "standalone",
+  "background_color": "#000000",
+  "theme_color": "#000000",
+  "orientation": "portrait-primary",
+  "icons": [
+    {
+      "src": "/Apps icon.png",
+      "sizes": "512x512",
+      "type": "image/png",
+      "purpose": "any maskable"
+    },
+    {
+      "src": "/M_Logo_Img03.png",
+      "sizes": "512x512",
+      "type": "image/png",
+      "purpose": "any"
+    }
+  ]
+}

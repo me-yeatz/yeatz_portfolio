@@ -6,21 +6,21 @@ import { Analytics } from "./components/analytics";
 
 export const metadata: Metadata = {
   title: {
-    default: "chronark.com",
-    template: "%s | chronark.com",
+    default: "me.yeatz - Portfolio",
+    template: "%s | me.yeatz",
   },
-  description: "Co-founder of unkey.dev and founder of planetfall.io",
+  description: "Full-stack developer crafting web applications and sharing creative projects",
   openGraph: {
-    title: "chronark.com",
+    title: "me.yeatz - Portfolio",
     description:
-      "Co-founder of unkey.dev and founder of planetfall.io",
-    url: "https://chronark.com",
-    siteName: "chronark.com",
+      "Full-stack developer crafting web applications and sharing creative projects",
+    url: "https://yeatz-portfolio.vercel.app",
+    siteName: "me.yeatz",
     images: [
       {
-        url: "https://chronark.com/og.png",
-        width: 1920,
-        height: 1080,
+        url: "https://yeatz-portfolio.vercel.app/Apps icon.png",
+        width: 512,
+        height: 512,
       },
     ],
     locale: "en-US",
@@ -38,12 +38,15 @@ export const metadata: Metadata = {
     },
   },
   twitter: {
-    title: "Chronark",
+    title: "me.yeatz",
     card: "summary_large_image",
   },
   icons: {
-    shortcut: "/favicon.png",
+    icon: "/Apps icon.png",
+    shortcut: "/Apps icon.png",
+    apple: "/Apps icon.png",
   },
+  manifest: "/manifest.json",
 };
 const inter = Inter({
   subsets: ["latin"],
