@@ -1,5 +1,5 @@
 "use client";
-import { Github, Mail, Twitter } from "lucide-react";
+import { Github, Mail, Instagram } from "lucide-react";
 import Link from "next/link";
 import { Navigation } from "../components/nav";
 import { Card } from "../components/card";
@@ -18,10 +18,10 @@ const socials = [
 		handle: "me-yeatz",
 	},
 	{
-		icon: <Twitter size={20} />,
-		href: "https://linkedin.com/in/jordantaylorengineer",
-		label: "LinkedIn",
-		handle: "jordantaylorengineer",
+		icon: <Instagram size={20} />,
+		href: "https://instagram.com/me.yeatz",
+		label: "Instagram",
+		handle: "me.yeatz",
 	},
 ];
 
