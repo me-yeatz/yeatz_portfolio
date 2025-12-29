@@ -11,16 +11,6 @@ const navigation = [
   { name: "Contact", href: "/contact" },
 ];
 
-const meteors = [
-  { top: "5%", left: "10%", delay: "0s", duration: "4s" },
-  { top: "15%", left: "70%", delay: "1.5s", duration: "5s" },
-  { top: "25%", left: "30%", delay: "3s", duration: "4.5s" },
-  { top: "10%", left: "85%", delay: "2s", duration: "5.5s" },
-  { top: "35%", left: "50%", delay: "4s", duration: "4s" },
-  { top: "8%", left: "45%", delay: "0.5s", duration: "5s" },
-  { top: "20%", left: "20%", delay: "2.5s", duration: "4.5s" },
-  { top: "12%", left: "60%", delay: "3.5s", duration: "5s" },
-];
 
 export default function Home() {
   return (
@@ -46,19 +36,8 @@ export default function Home() {
         quantity={100}
       />
 
-      {/* Shooting Stars / Meteors */}
-      {meteors.map((meteor, index) => (
-        <span
-          key={index}
-          className="meteor animate-meteor pointer-events-none"
-          style={{
-            top: meteor.top,
-            left: meteor.left,
-            animationDelay: meteor.delay,
-            animationDuration: meteor.duration,
-          }}
-        />
-      ))}
+      {/* Single Fire Meteor */}
+      <div className="fire-meteor animate-fire-meteor pointer-events-none" />
       <h1 className="py-3.5 px-0.5 z-10 text-4xl text-transparent duration-1000 bg-white cursor-default text-edge-outline animate-title font-display sm:text-6xl md:text-9xl whitespace-nowrap bg-clip-text ">
         me.yeatz
       </h1>
