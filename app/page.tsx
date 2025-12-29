@@ -36,8 +36,12 @@ export default function Home() {
         quantity={100}
       />
 
-      {/* Single Fire Meteor */}
-      <div className="fire-meteor animate-fire-meteor pointer-events-none" />
+      {/* Aurora Effect */}
+      <div className="aurora-container pointer-events-none">
+        <div className="aurora aurora-1" />
+        <div className="aurora aurora-2" />
+        <div className="aurora aurora-3" />
+      </div>
       <h1 className="py-3.5 px-0.5 z-10 text-4xl text-transparent duration-1000 bg-white cursor-default text-edge-outline animate-title font-display sm:text-6xl md:text-9xl whitespace-nowrap bg-clip-text ">
         me.yeatz
       </h1>

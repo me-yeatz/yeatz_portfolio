@@ -41,7 +41,6 @@ module.exports = {
 				title: "title 3s ease-out forwards",
 				"fade-left": "fade-left 3s ease-in-out forwards",
 				"fade-right": "fade-right 3s ease-in-out forwards",
-				"fire-meteor": "fire-meteor 8s ease-in-out infinite",
 			},
 			keyframes: {
 				"fade-in": {
@@ -100,22 +99,6 @@ module.exports = {
 					"100%": {
 						"line-height": "100%",
 						opacity: "100%",
-					},
-				},
-				"fire-meteor": {
-					"0%": {
-						transform: "translate(0, 0) rotate(0deg)",
-						opacity: "0",
-					},
-					"5%": {
-						opacity: "1",
-					},
-					"90%": {
-						opacity: "1",
-					},
-					"100%": {
-						transform: "translate(-120vw, 80vh) rotate(0deg)",
-						opacity: "0",
 					},
 				},
 			},
