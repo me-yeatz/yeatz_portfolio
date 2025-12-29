@@ -3,11 +3,23 @@ import React from "react";
 import Particles from "./components/particles";
 
 const navigation = [
+  { name: "Home", href: "/" },
   { name: "Profile", href: "/profile" },
   { name: "Dev Apps", href: "/dev-apps" },
   { name: "Architecture", href: "/architecture" },
   { name: "Research", href: "/research" },
   { name: "Contact", href: "/contact" },
+];
+
+const meteors = [
+  { top: "5%", left: "10%", delay: "0s", duration: "4s" },
+  { top: "15%", left: "70%", delay: "1.5s", duration: "5s" },
+  { top: "25%", left: "30%", delay: "3s", duration: "4.5s" },
+  { top: "10%", left: "85%", delay: "2s", duration: "5.5s" },
+  { top: "35%", left: "50%", delay: "4s", duration: "4s" },
+  { top: "8%", left: "45%", delay: "0.5s", duration: "5s" },
+  { top: "20%", left: "20%", delay: "2.5s", duration: "4.5s" },
+  { top: "12%", left: "60%", delay: "3.5s", duration: "5s" },
 ];
 
 export default function Home() {
@@ -19,7 +31,9 @@ export default function Home() {
             <Link
               key={item.href}
               href={item.href}
-              className="text-sm duration-500 text-zinc-500 hover:text-zinc-300"
+              className={`text-sm duration-500 hover:text-zinc-300 ${
+                item.name === "Home" ? "text-zinc-100 font-semibold" : "text-zinc-500"
+              }`}
             >
               {item.name}
             </Link>
@@ -31,6 +45,20 @@ export default function Home() {
         className="absolute inset-0 -z-10 animate-fade-in"
         quantity={100}
       />
+
+      {/* Shooting Stars / Meteors */}
+      {meteors.map((meteor, index) => (
+        <span
+          key={index}
+          className="meteor animate-meteor pointer-events-none"
+          style={{
+            top: meteor.top,
+            left: meteor.left,
+            animationDelay: meteor.delay,
+            animationDuration: meteor.duration,
+          }}
+        />
+      ))}
       <h1 className="py-3.5 px-0.5 z-10 text-4xl text-transparent duration-1000 bg-white cursor-default text-edge-outline animate-title font-display sm:text-6xl md:text-9xl whitespace-nowrap bg-clip-text ">
         me.yeatz
       </h1>

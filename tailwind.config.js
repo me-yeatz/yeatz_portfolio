@@ -41,6 +41,8 @@ module.exports = {
 				title: "title 3s ease-out forwards",
 				"fade-left": "fade-left 3s ease-in-out forwards",
 				"fade-right": "fade-right 3s ease-in-out forwards",
+				"meteor": "meteor 5s linear infinite",
+				"meteor-delayed": "meteor 5s linear 2.5s infinite",
 			},
 			keyframes: {
 				"fade-in": {
@@ -99,6 +101,19 @@ module.exports = {
 					"100%": {
 						"line-height": "100%",
 						opacity: "100%",
+					},
+				},
+				meteor: {
+					"0%": {
+						transform: "rotate(215deg) translateX(0)",
+						opacity: "1",
+					},
+					"70%": {
+						opacity: "1",
+					},
+					"100%": {
+						transform: "rotate(215deg) translateX(-500px)",
+						opacity: "0",
 					},
 				},
 			},
