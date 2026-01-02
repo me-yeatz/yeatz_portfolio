@@ -10,19 +10,19 @@ const apps = [
     title: "Brutalist Notes",
     description: "Note-taking and documentation system designed for technical professionals. Capture, organize, and retrieve your architectural notes with ease.",
     url: "https://brutalist-note.vercel.app",
-    logo: "/Apps icon.png",
+    logo: "https://brutalist-note.vercel.app/logo.png",
   },
   {
-    title: "Healing Journal",
-    description: "Personal wellness and reflection journal. Track your daily thoughts, emotions, and journey towards better mental health and self-awareness.",
-    url: "https://healing-journal-theta.vercel.app",
-    logo: "/Apps icon.png",
+    title: "Chronicle",
+    description: "A minimalist personal planning, journaling, and productivity application with AI-powered insights to track your goals and patterns.",
+    url: "https://chronicle-yeatz.vercel.app",
+    logo: "https://chronicle-yeatz.vercel.app/logo.png",
   },
   {
     title: "Monolith Ledge",
     description: "Project planning and organization application. Manage your architectural projects, tasks, and documentation in one powerful platform.",
     url: "https://monolith-ledge.vercel.app",
-    logo: "/Apps icon.png",
+    logo: "https://monolith-ledge.vercel.app/logo.png",
   },
 ];
 
