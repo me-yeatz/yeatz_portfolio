@@ -3,7 +3,8 @@ import Link from "next/link";
 import Image from "next/image";
 import { Navigation } from "../components/nav";
 import { Card } from "../components/card";
-import { Github, Linkedin, Mail, Phone, MapPin, Box, Layers, Palette, Pen, Zap, Sun, Video, Calendar, FileText, Monitor, Code, Figma, Terminal } from "lucide-react";
+import { Github, Linkedin, Mail, Phone, MapPin } from "lucide-react";
+import { SoftwareItem, softwareList } from "../components/software-icons";
 
 export default function ProfilePage() {
   return (
@@ -113,96 +114,11 @@ export default function ProfilePage() {
           <div className="space-y-4">
             <h3 className="text-2xl font-bold text-zinc-100">Software Mastery</h3>
             <div className="grid grid-cols-2 md:grid-cols-4 lg:grid-cols-5 gap-4">
-              <Card>
-                <div className="p-4 flex flex-col items-center gap-2">
-                  <Box size={24} className="text-zinc-400" />
-                  <p className="text-zinc-300 text-sm text-center">AutoCAD</p>
-                </div>
-              </Card>
-              <Card>
-                <div className="p-4 flex flex-col items-center gap-2">
-                  <Layers size={24} className="text-zinc-400" />
-                  <p className="text-zinc-300 text-sm text-center">SketchUp</p>
-                </div>
-              </Card>
-              <Card>
-                <div className="p-4 flex flex-col items-center gap-2">
-                  <Palette size={24} className="text-zinc-400" />
-                  <p className="text-zinc-300 text-sm text-center">Photoshop</p>
-                </div>
-              </Card>
-              <Card>
-                <div className="p-4 flex flex-col items-center gap-2">
-                  <Pen size={24} className="text-zinc-400" />
-                  <p className="text-zinc-300 text-sm text-center">Illustrator</p>
-                </div>
-              </Card>
-              <Card>
-                <div className="p-4 flex flex-col items-center gap-2">
-                  <Zap size={24} className="text-zinc-400" />
-                  <p className="text-zinc-300 text-sm text-center">V-Ray</p>
-                </div>
-              </Card>
-              <Card>
-                <div className="p-4 flex flex-col items-center gap-2">
-                  <Sun size={24} className="text-zinc-400" />
-                  <p className="text-zinc-300 text-sm text-center">Enscape</p>
-                </div>
-              </Card>
-              <Card>
-                <div className="p-4 flex flex-col items-center gap-2">
-                  <Video size={24} className="text-zinc-400" />
-                  <p className="text-zinc-300 text-sm text-center">Lumion</p>
-                </div>
-              </Card>
-              <Card>
-                <div className="p-4 flex flex-col items-center gap-2">
-                  <Calendar size={24} className="text-zinc-400" />
-                  <p className="text-zinc-300 text-sm text-center">Primavera</p>
-                </div>
-              </Card>
-              <Card>
-                <div className="p-4 flex flex-col items-center gap-2">
-                  <FileText size={24} className="text-zinc-400" />
-                  <p className="text-zinc-300 text-sm text-center">MS Office</p>
-                </div>
-              </Card>
-              <Card>
-                <div className="p-4 flex flex-col items-center gap-2">
-                  <Monitor size={24} className="text-zinc-400" />
-                  <p className="text-zinc-300 text-sm text-center">PowerPoint</p>
-                </div>
-              </Card>
-              <Card>
-                <div className="p-4 flex flex-col items-center gap-2">
-                  <Figma size={24} className="text-zinc-400" />
-                  <p className="text-zinc-300 text-sm text-center">Figma</p>
-                </div>
-              </Card>
-              <Card>
-                <div className="p-4 flex flex-col items-center gap-2">
-                  <Palette size={24} className="text-zinc-400" />
-                  <p className="text-zinc-300 text-sm text-center">Canva</p>
-                </div>
-              </Card>
-              <Card>
-                <div className="p-4 flex flex-col items-center gap-2">
-                  <Code size={24} className="text-zinc-400" />
-                  <p className="text-zinc-300 text-sm text-center">VS Code</p>
-                </div>
-              </Card>
-              <Card>
-                <div className="p-4 flex flex-col items-center gap-2">
-                  <Code size={24} className="text-zinc-400" />
-                  <p className="text-zinc-300 text-sm text-center">VS Codium</p>
-                </div>
-              </Card>
-              <Card>
-                <div className="p-4 flex flex-col items-center gap-2">
-                  <Terminal size={24} className="text-zinc-400" />
-                  <p className="text-zinc-300 text-sm text-center">CLI Tools</p>
-                </div>
-              </Card>
+              {softwareList.map((software) => (
+                <Card key={software.name}>
+                  <SoftwareItem {...software} />
+                </Card>
+              ))}
             </div>
           </div>
 
