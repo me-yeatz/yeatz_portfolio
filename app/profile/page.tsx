@@ -54,7 +54,7 @@ export default function ProfilePage() {
                   and personal studio practice.
                 </p>
                 <p className="mt-4 text-zinc-400 leading-relaxed">
-                  Founded <span className="text-zinc-100 font-semibold">M•YEATZ Archstudio</span>, successfully
+                  Founded <span className="text-zinc-100 font-semibold">M. YEATZ archstudio</span>, successfully
                   managing independent architectural consultancy since 2019. Self-taught full-stack developer, creating
                   custom productivity applications to solve architecture industry pain points.
                 </p>
