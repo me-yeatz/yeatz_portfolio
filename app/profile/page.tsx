@@ -215,7 +215,7 @@ export default function ProfilePage() {
                   <div className="flex justify-between items-start mb-2">
                     <div>
                       <h4 className="text-lg font-bold text-zinc-100">Founder & Project Architect</h4>
-                      <p className="text-zinc-300">M.Y.E.A.T.Z Archstudio</p>
+                      <p className="text-zinc-300">M. YEATZ archstudio</p>
                     </div>
                     <span className="text-sm text-zinc-500">Sept 2019 – Present</span>
                   </div>
