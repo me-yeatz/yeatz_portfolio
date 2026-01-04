@@ -4,7 +4,8 @@ import Image from "next/image";
 import { Navigation } from "../components/nav";
 import { Card } from "../components/card";
 import { Github, Linkedin, Mail, Phone, MapPin } from "lucide-react";
-import { SoftwareItem, softwareList } from "../components/software-icons";
+import { SoftwareItem } from "../components/software-icons";
+import { softwareList } from "../components/software-data";
 
 export default function ProfilePage() {
   return (
