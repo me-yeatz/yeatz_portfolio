@@ -253,7 +253,7 @@ export default function ProfilePage() {
                   <div className="flex justify-between items-start mb-2">
                     <div>
                       <h4 className="text-lg font-bold text-zinc-100">Assistant Architect</h4>
-                      <p className="text-zinc-300">Neuformation Architect & Others</p>
+                      <p className="text-zinc-300">Neuformation Architect Sdn. Bhd</p>
                     </div>
                     <span className="text-sm text-zinc-500">2012 – 2018</span>
                   </div>
