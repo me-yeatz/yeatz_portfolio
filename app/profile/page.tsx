@@ -29,14 +29,35 @@ export default function ProfilePage() {
             {/* Text Content */}
             <div className="flex-1 text-center md:text-left">
               <h2 className="text-3xl font-bold tracking-tight text-zinc-100 sm:text-4xl">
-                M. Nor Hidayat
+                M.NOR HIDAYAT
               </h2>
               <p className="mt-4 text-xl text-zinc-300">
-                Senior Technical Architect
+                Senior Technical Architect × Software Developer × Researcher
               </p>
               <p className="mt-2 text-zinc-400">
-                10+ years transforming architectural visions into precise, construction-ready documentation
+                Bridging traditional architecture with modern digital innovation
               </p>
+              <div className="mt-4 flex justify-center md:justify-start">
+                <a href="https://orcid.org/0009-0004-2211-2406" target="_blank" rel="noopener noreferrer" className="inline-flex items-center gap-1 text-xs text-zinc-500 hover:text-zinc-300 transition-colors">
+                  <svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg" className="inline-block">
+                    <mask id="mask0_105_2" style="mask-type:luminance" maskUnits="userSpaceOnUse" x="0" y="0" width="16" height="16">
+                      <path d="M0 0H16V16H0V0Z" fill="white"/>
+                    </mask>
+                    <g mask="url(#mask0_105_2)">
+                      <path d="M12.0521 0H3.94889C2.21778 0 0.948889 1.26889 0.948889 2.90667V13.0944C0.948889 14.7322 2.21778 16 3.94889 16H12.0522C13.7822 16 15.0511 14.7311 15.0511 13.0944V2.90667C15.0511 1.26889 13.7822 0 12.0511 0H12.0521Z" fill="#009DE0"/>
+                      <path d="M4.22222 13.2311H2.31556V4.76889H4.22222V13.2311Z" fill="white"/>
+                      <path d="M13.7778 13.2311H11.8711V4.76889H13.7778V13.2311Z" fill="white"/>
+                      <path d="M11.0667 10.0444C10.2222 9.33333 9.15556 8.88889 7.99999 8.88889C5.79999 8.88889 4.08889 10.5556 4.08889 12.6667C4.08889 14.7778 5.79999 16 7.99999 16C10.1999 16 11.9111 14.7778 11.9111 12.6667C11.9111 11.7778 11.5556 11.0667 10.9778 10.4444C11.3778 10.0444 11.6889 10.0444 11.0667 10.0444ZM6.22222 12.6667C6.22222 11.5556 7.02222 10.6667 7.99999 10.6667C8.97777 10.6667 9.77777 11.5556 9.77777 12.6667C9.77777 13.7778 8.97777 14.2222 7.99999 14.2222C7.02222 14.2222 6.22222 13.7778 6.22222 12.6667Z" fill="white"/>
+                    </g>
+                  </svg>
+                  <span>ORCID: 0009-0004-2211-2406</span>
+                </a>
+              </div>
+              <div className="mt-6 max-w-lg">
+                <p className="text-sm text-zinc-400 italic leading-relaxed">
+                  Years of exploitation taught me invisibility in tech has a cost. I now build open-source solutions that respect creator integrity, protect privacy, and honor craftsmanship in every line.
+                </p>
+              </div>
             </div>
           </div>
         </div>
@@ -49,16 +70,22 @@ export default function ProfilePage() {
             <Card>
               <div className="p-6">
                 <p className="text-zinc-400 leading-relaxed">
-                  Senior Technical Architect with 10+ years transforming architectural visions into precise,
-                  construction-ready documentation. Expert in managing full project lifecycles from concept to approval,
-                  specializing in UBBL compliance and technical accuracy. Proven track record of delivering complex
-                  projects on time while maintaining rigorous quality standards across multiple architectural firms
-                  and personal studio practice.
+                  I'm a Senior Technical Architect with 10+ years of experience transforming architectural visions into precise,
+                  construction-ready documentation. My expertise spans the full project lifecycle from concept to approval,
+                  with specialization in UBBL compliance and technical accuracy. I've delivered complex projects on time
+                  while maintaining rigorous quality standards across multiple architectural firms and my own studio practice.
                 </p>
                 <p className="mt-4 text-zinc-400 leading-relaxed">
-                  Founded <span className="text-zinc-100 font-semibold">M. YEATZ archstudio</span>, successfully
-                  managing independent architectural consultancy since 2019. Self-taught full-stack developer, creating
-                  custom productivity applications to solve architecture industry pain points.
+                  As the founder of <span className="text-zinc-100 font-semibold">M. YEATZ archstudio</span>,
+                  I've successfully managed independent architectural consultancy since 2019. Beyond architecture,
+                  I'm a self-taught full-stack developer who creates custom productivity applications to solve real-world
+                  architecture industry challenges.
+                </p>
+                <p className="mt-4 text-zinc-400 leading-relaxed">
+                  My unique approach bridges traditional architecture with cutting-edge technology. I believe in
+                  "AI as teammates, not tools" and focus on building systems with soul. My work combines deep domain
+                  expertise in architecture with modern software development practices, creating innovative solutions
+                  that enhance both technical precision and creative expression.
                 </p>
               </div>
             </Card>
@@ -186,11 +213,11 @@ export default function ProfilePage() {
 
           {/* Education */}
           <div className="space-y-4">
-            <h3 className="text-2xl font-bold text-zinc-100">Education & Certifications</h3>
+            <h3 className="text-2xl font-bold text-zinc-100">Education</h3>
             <div className="grid md:grid-cols-2 gap-6">
               <Card>
                 <div className="p-6">
-                  <h4 className="text-lg font-bold text-zinc-100 mb-2">Education</h4>
+                  <h4 className="text-lg font-bold text-zinc-100 mb-2">Formal Education</h4>
                   <div className="space-y-4">
                     <div>
                       <p className="text-zinc-300 font-semibold">BSc (Hons) Construction Management</p>
@@ -206,16 +233,86 @@ export default function ProfilePage() {
 
               <Card>
                 <div className="p-6">
-                  <h4 className="text-lg font-bold text-zinc-100 mb-2">Professional Certifications</h4>
-                  <div className="space-y-3">
+                  <h4 className="text-lg font-bold text-zinc-100 mb-2">Continuing Education</h4>
+                  <div className="space-y-4">
                     <div>
-                      <p className="text-zinc-300 font-semibold">Certified Senior Architectural Draughtsman</p>
-                      <p className="text-sm text-zinc-500">SKM (NOSS) - Level 01, 02 & 03</p>
+                      <p className="text-zinc-300 font-semibold">Advanced Web Development</p>
+                      <p className="text-sm text-zinc-500">Self-directed Learning • 2023-2025</p>
                     </div>
                     <div>
-                      <p className="text-zinc-300 font-semibold">Registered Construction Personnel</p>
-                      <p className="text-sm text-zinc-500">CIDB Malaysia • W81114102011000B</p>
+                      <p className="text-zinc-300 font-semibold">AI Integration in Design</p>
+                      <p className="text-sm text-zinc-500">Continuous Professional Development • 2024-2025</p>
                     </div>
+                  </div>
+                </div>
+              </Card>
+            </div>
+          </div>
+
+          {/* Certifications */}
+          <div className="space-y-4">
+            <h3 className="text-2xl font-bold text-zinc-100">Certifications</h3>
+            <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
+              <Card>
+                <div className="p-6">
+                  <h4 className="text-lg font-bold text-zinc-100 mb-2">Vercel Certified Professional</h4>
+                  <p className="text-sm text-zinc-500 mb-3">Vercel Deployment & Hosting Certification</p>
+                  <div className="aspect-video bg-zinc-800 rounded-lg flex items-center justify-center overflow-hidden">
+                    <Image
+                      src="/Certifications/Cert Vercel.png"
+                      alt="Vercel Certified Professional Certificate"
+                      width={300}
+                      height={200}
+                      className="object-contain"
+                    />
+                  </div>
+                </div>
+              </Card>
+
+              <Card>
+                <div className="p-6">
+                  <h4 className="text-lg font-bold text-zinc-100 mb-2">Hive University Certification</h4>
+                  <p className="text-sm text-zinc-500 mb-3">Advanced Web Development Program</p>
+                  <div className="aspect-video bg-zinc-800 rounded-lg flex items-center justify-center overflow-hidden">
+                    <Image
+                      src="/Certifications/Cert_Hive University.jpeg"
+                      alt="Hive University Certification"
+                      width={300}
+                      height={200}
+                      className="object-contain"
+                    />
+                  </div>
+                </div>
+              </Card>
+
+              <Card>
+                <div className="p-6">
+                  <h4 className="text-lg font-bold text-zinc-100 mb-2">Microsoft Certified: Responsible AI with GitHub Copilot</h4>
+                  <p className="text-sm text-zinc-500 mb-3">Ethical AI Implementation & Integration</p>
+                  <div className="aspect-video bg-zinc-800 rounded-lg flex items-center justify-center overflow-hidden">
+                    <Image
+                      src="/Certifications/microsoft-responsible-ai-copilot.jpg"
+                      alt="Microsoft Certified: Responsible AI with GitHub Copilot Certificate"
+                      width={300}
+                      height={200}
+                      className="object-contain"
+                    />
+                  </div>
+                </div>
+              </Card>
+
+              <Card>
+                <div className="p-6">
+                  <h4 className="text-lg font-bold text-zinc-100 mb-2">Technology & Development Certifications</h4>
+                  <p className="text-sm text-zinc-500 mb-3">Software development and emerging technologies</p>
+                  <div className="aspect-video bg-zinc-800 rounded-lg flex items-center justify-center overflow-hidden">
+                    <Image
+                      src="/Certifications/tech-development-cert.jpg"
+                      alt="Technology and Development Certification"
+                      width={300}
+                      height={200}
+                      className="object-contain"
+                    />
                   </div>
                 </div>
               </Card>
@@ -228,16 +325,35 @@ export default function ProfilePage() {
             <Card>
               <div className="p-6">
                 <p className="text-zinc-400 leading-relaxed mb-4">
-                  Self-taught full-stack developer, creating custom productivity applications to solve
-                  architecture industry pain points:
+                  I create custom productivity applications that solve real architecture industry challenges,
+                  combining technical precision with intuitive design:
                 </p>
                 <ul className="space-y-2 text-zinc-400">
                   <li>• <span className="text-zinc-100 font-semibold">Brutalist Notes:</span> Note-taking and documentation system for technical professionals</li>
                   <li>• <span className="text-zinc-100 font-semibold">QodeSnipped:</span> Code snippet management tool for technical workflows</li>
                   <li>• <span className="text-zinc-100 font-semibold">PlanoraNotta:</span> Project planning and organization application</li>
+                  <li>• <span className="text-zinc-100 font-semibold">BaseForge:</span> No-code database platform with Gantt charts for project management</li>
                 </ul>
                 <p className="mt-4 text-zinc-400 italic">
-                  Philosophy: "AI as teammates, not tools" - crediting all contributors and building with soul
+                  Philosophy: "AI as teammates, not tools" - building systems with soul and crediting all contributors
+                </p>
+              </div>
+            </Card>
+          </div>
+
+          {/* Resilience Statement */}
+          <div className="space-y-4">
+            <h3 className="text-2xl font-bold text-zinc-100">Resilience & Recovery</h3>
+            <Card>
+              <div className="p-6">
+                <p className="text-zinc-400 leading-relaxed">
+                  My journey has included professional challenges that tested my resilience. After experiencing three years of systematic exploitation and abuse in a project where I received no payment despite extensive work beyond my original scope, I emerged with a deeper understanding of the importance of ethical practices in professional relationships.
+                </p>
+                <p className="mt-4 text-zinc-400 leading-relaxed">
+                  This experience, while traumatic, strengthened my commitment to building solutions that respect creator integrity, protect privacy, and honor craftsmanship. I now channel my expertise toward creating tools and systems that prevent the kind of exploitation I experienced - ensuring others don't face the same vulnerabilities.
+                </p>
+                <p className="mt-4 text-zinc-400 leading-relaxed">
+                  Though the journey has been difficult, it has shaped my unwavering dedication to ethical technology and design. Every line of code I write and every project I undertake carries the lessons learned from adversity - transforming pain into purpose, and vulnerability into strength.
                 </p>
               </div>
             </Card>

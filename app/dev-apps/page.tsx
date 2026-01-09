@@ -31,14 +31,66 @@ export default function DevAppsPage() {
     <div className="bg-gradient-to-tl from-zinc-900/0 via-zinc-900 to-zinc-900/0 relative pb-16">
       <Navigation />
       <div className="px-6 pt-24 mx-auto space-y-8 max-w-7xl lg:px-8 md:space-y-16 md:pt-28 lg:pt-32">
-        {/* Header */}
-        <div className="max-w-2xl mx-auto lg:mx-0">
-          <h2 className="text-3xl font-bold tracking-tight text-zinc-100 sm:text-4xl">
+        {/* Tech Stack Header */}
+        <div className="max-w-6xl mx-auto lg:mx-0">
+          <h2 className="text-3xl font-bold tracking-tight text-zinc-100 sm:text-4xl text-center lg:text-left">
             Dev Apps
           </h2>
-          <p className="mt-4 text-zinc-400">
+          <p className="mt-4 text-zinc-400 text-center lg:text-left">
             Explore my web applications and download them directly to use.
           </p>
+
+          {/* Tech Stack Badges */}
+          <div className="mt-8 flex flex-wrap justify-center lg:justify-start gap-4">
+            <div className="flex items-center gap-2 bg-zinc-800 px-4 py-2 rounded-full">
+              <svg className="w-5 h-5 text-orange-500" fill="currentColor" viewBox="0 0 24 24">
+                <path d="M12.0001 2C6.47742 2 2 6.47742 2 12.0001C2 17.5228 6.47742 22 12.0001 22C17.5228 22 22 17.5228 22 12.0001C22 6.47742 17.5228 2 12.0001 2ZM12.0001 20C7.58178 20 4 16.4182 4 12.0001C4 7.58178 7.58178 4 12.0001 4C16.4182 4 20 7.58178 20 12.0001C20 16.4182 16.4182 20 12.0001 20ZM12 6L15 10H13V14H11V10H9L12 6Z"/>
+              </svg>
+              <span className="text-sm font-medium">HTML5</span>
+            </div>
+            <div className="flex items-center gap-2 bg-zinc-800 px-4 py-2 rounded-full">
+              <svg className="w-5 h-5 text-blue-500" fill="currentColor" viewBox="0 0 24 24">
+                <path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm0 18c-4.42 0-8-3.58-8-8s3.58-8 8-8 8 3.58 8 8-3.58 8-8 8zm-1-13h2v10h-2z"/>
+              </svg>
+              <span className="text-sm font-medium">CSS3</span>
+            </div>
+            <div className="flex items-center gap-2 bg-zinc-800 px-4 py-2 rounded-full">
+              <svg className="w-5 h-5 text-yellow-500" fill="currentColor" viewBox="0 0 24 24">
+                <path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm0 18c-4.42 0-8-3.58-8-8s3.58-8 8-8 8 3.58 8 8-3.58 8-8 8zm-1-13h2v10h-2z"/>
+              </svg>
+              <span className="text-sm font-medium">JavaScript</span>
+            </div>
+            <div className="flex items-center gap-2 bg-zinc-800 px-4 py-2 rounded-full">
+              <svg className="w-5 h-5 text-blue-400" fill="currentColor" viewBox="0 0 24 24">
+                <path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm0 18c-4.42 0-8-3.58-8-8s3.58-8 8-8 8 3.58 8 8-3.58 8-8 8zm-1-13h2v10h-2z"/>
+              </svg>
+              <span className="text-sm font-medium">TypeScript</span>
+            </div>
+            <div className="flex items-center gap-2 bg-zinc-800 px-4 py-2 rounded-full">
+              <svg className="w-5 h-5 text-cyan-400" fill="currentColor" viewBox="0 0 24 24">
+                <path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm0 18c-4.42 0-8-3.58-8-8s3.58-8 8-8 8 3.58 8 8-3.58 8-8 8zm-1-13h2v10h-2z"/>
+              </svg>
+              <span className="text-sm font-medium">React</span>
+            </div>
+            <div className="flex items-center gap-2 bg-zinc-800 px-4 py-2 rounded-full">
+              <svg className="w-5 h-5 text-purple-500" fill="currentColor" viewBox="0 0 24 24">
+                <path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm0 18c-4.42 0-8-3.58-8-8s3.58-8 8-8 8 3.58 8 8-3.58 8-8 8zm-1-13h2v10h-2z"/>
+              </svg>
+              <span className="text-sm font-medium">Electron</span>
+            </div>
+            <div className="flex items-center gap-2 bg-zinc-800 px-4 py-2 rounded-full">
+              <svg className="w-5 h-5 text-red-500" fill="currentColor" viewBox="0 0 24 24">
+                <path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm0 18c-4.42 0-8-3.58-8-8s3.58-8 8-8 8 3.58 8 8-3.58 8-8 8zm-1-13h2v10h-2z"/>
+              </svg>
+              <span className="text-sm font-medium">Figma</span>
+            </div>
+            <div className="flex items-center gap-2 bg-zinc-800 px-4 py-2 rounded-full">
+              <svg className="w-5 h-5 text-green-500" fill="currentColor" viewBox="0 0 24 24">
+                <path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm0 18c-4.42 0-8-3.58-8-8s3.58-8 8-8 8 3.58 8 8-3.58 8-8 8zm-1-13h2v10h-2z"/>
+              </svg>
+              <span className="text-sm font-medium">Vite</span>
+            </div>
+          </div>
         </div>
         <div className="w-full h-px bg-zinc-800" />
 
