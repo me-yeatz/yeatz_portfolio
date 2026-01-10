@@ -21,9 +21,8 @@ export default function Home() {
             <Link
               key={item.href}
               href={item.href}
-              className={`text-sm duration-500 hover:text-zinc-300 ${
-                item.name === "Home" ? "text-zinc-100 font-semibold" : "text-zinc-500"
-              }`}
+              className={`text-sm duration-500 hover:text-zinc-300 ${item.name === "Home" ? "text-zinc-100 font-semibold" : "text-zinc-500"
+                }`}
             >
               {item.name}
             </Link>
@@ -56,14 +55,14 @@ export default function Home() {
         <div className="mt-4 flex justify-center">
           <a href="https://orcid.org/0009-0004-2211-2406" target="_blank" rel="noopener noreferrer" className="inline-flex items-center gap-1 text-xs text-zinc-500 hover:text-zinc-300 transition-colors">
             <svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg" className="inline-block">
-              <mask id="mask0_105_2" style="mask-type:luminance" maskUnits="userSpaceOnUse" x="0" y="0" width="16" height="16">
-                <path d="M0 0H16V16H0V0Z" fill="white"/>
+              <mask id="mask0_105_2" style={{ maskType: "luminance" }} maskUnits="userSpaceOnUse" x="0" y="0" width="16" height="16">
+                <path d="M0 0H16V16H0V0Z" fill="white" />
               </mask>
               <g mask="url(#mask0_105_2)">
-                <path d="M12.0521 0H3.94889C2.21778 0 0.948889 1.26889 0.948889 2.90667V13.0944C0.948889 14.7322 2.21778 16 3.94889 16H12.0522C13.7822 16 15.0511 14.7311 15.0511 13.0944V2.90667C15.0511 1.26889 13.7822 0 12.0511 0H12.0521Z" fill="#009DE0"/>
-                <path d="M4.22222 13.2311H2.31556V4.76889H4.22222V13.2311Z" fill="white"/>
-                <path d="M13.7778 13.2311H11.8711V4.76889H13.7778V13.2311Z" fill="white"/>
-                <path d="M11.0667 10.0444C10.2222 9.33333 9.15556 8.88889 7.99999 8.88889C5.79999 8.88889 4.08889 10.5556 4.08889 12.6667C4.08889 14.7778 5.79999 16 7.99999 16C10.1999 16 11.9111 14.7778 11.9111 12.6667C11.9111 11.7778 11.5556 11.0667 10.9778 10.4444C11.3778 10.0444 11.6889 10.0444 11.0667 10.0444ZM6.22222 12.6667C6.22222 11.5556 7.02222 10.6667 7.99999 10.6667C8.97777 10.6667 9.77777 11.5556 9.77777 12.6667C9.77777 13.7778 8.97777 14.2222 7.99999 14.2222C7.02222 14.2222 6.22222 13.7778 6.22222 12.6667Z" fill="white"/>
+                <path d="M12.0521 0H3.94889C2.21778 0 0.948889 1.26889 0.948889 2.90667V13.0944C0.948889 14.7322 2.21778 16 3.94889 16H12.0522C13.7822 16 15.0511 14.7311 15.0511 13.0944V2.90667C15.0511 1.26889 13.7822 0 12.0511 0H12.0521Z" fill="#009DE0" />
+                <path d="M4.22222 13.2311H2.31556V4.76889H4.22222V13.2311Z" fill="white" />
+                <path d="M13.7778 13.2311H11.8711V4.76889H13.7778V13.2311Z" fill="white" />
+                <path d="M11.0667 10.0444C10.2222 9.33333 9.15556 8.88889 7.99999 8.88889C5.79999 8.88889 4.08889 10.5556 4.08889 12.6667C4.08889 14.7778 5.79999 16 7.99999 16C10.1999 16 11.9111 14.7778 11.9111 12.6667C11.9111 11.7778 11.5556 11.0667 10.9778 10.4444C11.3778 10.0444 11.6889 10.0444 11.0667 10.0444ZM6.22222 12.6667C6.22222 11.5556 7.02222 10.6667 7.99999 10.6667C8.97777 10.6667 9.77777 11.5556 9.77777 12.6667C9.77777 13.7778 8.97777 14.2222 7.99999 14.2222C7.02222 14.2222 6.22222 13.7778 6.22222 12.6667Z" fill="white" />
               </g>
             </svg>
             <span>ORCID: 0009-0004-2211-2406</span>
