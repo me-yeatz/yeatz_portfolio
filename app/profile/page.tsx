@@ -201,6 +201,7 @@ export default function ProfilePage() {
                     </div>
                     <span className="text-sm text-zinc-500">2012 – 2018</span>
                   </div>
+                  <p className="text-sm text-zinc-500 mb-3">Ara Damansara, Petaling Jaya.</p>
                   <p className="text-zinc-400 text-sm">
                     Progressed through various architectural roles at multiple firms including Aliran Cipta Arkitek,
                     Raintree Building Construction, and FRN Solutions, building expertise in technical documentation,
