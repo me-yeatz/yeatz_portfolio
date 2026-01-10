@@ -208,6 +208,24 @@ export default function ProfilePage() {
                   </p>
                 </div>
               </Card>
+
+              <Card>
+                <div className="p-6">
+                  <div className="flex justify-between items-start mb-2">
+                    <div>
+                      <h4 className="text-lg font-bold text-zinc-100">Assistant Architect</h4>
+                      <p className="text-zinc-300">Aliran Cipta Arkitek</p>
+                    </div>
+                    <span className="text-sm text-zinc-500">2012 – 2017</span>
+                  </div>
+                  <p className="text-sm text-zinc-500 mb-3">Seksyen 13, Shah Alam</p>
+                  <p className="text-zinc-400 text-sm">
+                    Supported senior architects in preparing design drawings, technical drawing,
+                    documentation, and submission materials, contributing to project coordination
+                    and regulatory compliance.
+                  </p>
+                </div>
+              </Card>
             </div>
           </div>
 
