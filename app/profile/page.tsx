@@ -203,9 +203,8 @@ export default function ProfilePage() {
                   </div>
                   <p className="text-sm text-zinc-500 mb-3">Ara Damansara, Petaling Jaya.</p>
                   <p className="text-zinc-400 text-sm">
-                    Progressed through various architectural roles at multiple firms including Aliran Cipta Arkitek,
-                    Raintree Building Construction, and FRN Solutions, building expertise in technical documentation,
-                    compliance, and project coordination.
+                    Assisted in preparing architectural drawings, design documentation, and
+                    submission materials under the guidance of senior architects, supporting project coordination and compliance efforts.
                   </p>
                 </div>
               </Card>
@@ -292,7 +291,7 @@ export default function ProfilePage() {
                   <p className="text-sm text-zinc-500 mb-3">Ethical AI Implementation & Integration</p>
                   <div className="aspect-video bg-zinc-800 rounded-lg flex items-center justify-center overflow-hidden">
                     <Image
-                      src="/Certifications/microsoft-responsible-ai-copilot.jpg"
+                      src="/Certifications/microsoft-responsible-ai-copilot.png"
                       alt="Microsoft Certified: Responsible AI with GitHub Copilot Certificate"
                       width={300}
                       height={200}
@@ -308,7 +307,7 @@ export default function ProfilePage() {
                   <p className="text-sm text-zinc-500 mb-3">Software development and emerging technologies</p>
                   <div className="aspect-video bg-zinc-800 rounded-lg flex items-center justify-center overflow-hidden">
                     <Image
-                      src="/Certifications/tech-development-cert.jpg"
+                      src="/Certifications/tech-development-cert.png"
                       alt="Technology and Development Certification"
                       width={300}
                       height={200}
