@@ -10,48 +10,36 @@ const apps = [
     title: "Brutalist Notes",
     description: "Note-taking and documentation system designed for technical professionals. Capture, organize, and retrieve your architectural notes with ease.",
     url: "https://brutalist-note.vercel.app",
-    repoUrl: "https://github.com/me-yeatz/Brutalist-Note",
-    downloadUrl: "https://github.com/me-yeatz/Brutalist-Note/archive/refs/heads/main.zip",
     image: "/Apps Preview/brutalist-note.png",
   },
   {
     title: "Chronicle",
     description: "A minimalist personal planning, journaling, and productivity application with AI-powered insights to track your goals and patterns.",
     url: "https://chronicle-ochre.vercel.app/",
-    repoUrl: "https://github.com/me-yeatz/Chronicle",
-    downloadUrl: "https://github.com/me-yeatz/Chronicle/archive/refs/heads/main.zip",
     image: "/Apps Preview/chronicle.png",
   },
   {
     title: "Gridblock",
     description: "A unique layout and grid-based design tool for visualizing complex spatial arrangements and architectural compositions.",
     url: "https://gridblock-drab.vercel.app/",
-    repoUrl: "https://github.com/me-yeatz/Gridblock",
-    downloadUrl: "https://github.com/me-yeatz/Gridblock/archive/refs/heads/main.zip",
     image: "/Apps Preview/gridblock.png",
   },
   {
     title: "Kanbaneo",
     description: "Modern, streamlined Kanban board for project management. Organize tasks, track progress, and improve team productivity with visual workflows.",
     url: "https://kanbaneo.vercel.app/",
-    repoUrl: "https://github.com/me-yeatz/Kanbaneo",
-    downloadUrl: "https://github.com/me-yeatz/Kanbaneo/archive/refs/heads/main.zip",
     image: "/Apps Preview/kanbaneo.png",
   },
   {
     title: "Healing Journal",
     description: "A supportive digital space for personal growth and emotional recovery. Track your journey, reflections, and progress with mindful journaling.",
     url: "https://healing-journal-theta.vercel.app/",
-    repoUrl: "https://github.com/me-yeatz/Healing-Journal",
-    downloadUrl: "https://github.com/me-yeatz/Healing-Journal/archive/refs/heads/main.zip",
     image: "/Apps Preview/healing-journal.png",
   },
   {
     title: "Monolith Ledge",
     description: "Project planning and organization application. Manage your architectural projects, tasks, and documentation in one powerful platform.",
     url: "https://monolith-ledge.vercel.app",
-    repoUrl: "https://github.com/me-yeatz/Monolith-Ledge",
-    downloadUrl: "https://github.com/me-yeatz/Monolith-Ledge/archive/refs/heads/main.zip",
     image: "/Apps Preview/monolith-ledge.png",
   },
 ];
@@ -67,7 +55,7 @@ export default function DevAppsPage() {
             Dev Apps
           </h2>
           <p className="mt-4 text-zinc-400 text-center lg:text-left">
-            Explore my web applications and download them directly to use.
+            Explore my web applications and access them directly.
           </p>
 
           {/* Tech Stack Badges */}
@@ -166,30 +154,9 @@ export default function DevAppsPage() {
                         rel="noopener noreferrer"
                         className="inline-flex items-center justify-center gap-2 px-4 py-2 text-sm font-semibold transition-all bg-zinc-100 text-zinc-900 rounded-md hover:bg-zinc-300 w-full"
                       >
-                        <span>Open Live App</span>
+                        <span>Open App</span>
                         <span aria-hidden="true">&rarr;</span>
                       </Link>
-
-                      <div className="grid grid-cols-2 gap-3">
-                        <Link
-                          href={app.downloadUrl}
-                          className="inline-flex items-center justify-center gap-2 px-3 py-2 text-xs font-semibold transition-all border border-zinc-700 text-zinc-300 rounded-md hover:bg-zinc-800 hover:text-zinc-100"
-                        >
-                          <svg width="14" height="14" viewBox="0 0 16 16" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
-                            <path d="M8 12l-4-4h2.5V3h3v5H12L8 12zM2 13v1h12v-1H2z" />
-                          </svg>
-                          <span>Download</span>
-                        </Link>
-
-                        <Link
-                          href={app.repoUrl}
-                          target="_blank"
-                          rel="noopener noreferrer"
-                          className="inline-flex items-center justify-center gap-2 px-3 py-2 text-xs font-semibold transition-all border border-zinc-700 text-zinc-300 rounded-md hover:bg-zinc-800 hover:text-zinc-100"
-                        >
-                          <span>Repository</span>
-                        </Link>
-                      </div>
                     </div>
                   </div>
                 </article>
@@ -203,12 +170,12 @@ export default function DevAppsPage() {
               How to Install Web Apps
             </h4>
             <p className="text-zinc-400 mb-4">
-              Click on any app above to open it. You can install these web apps directly
+              Click on any app above to open it. You can save these web apps directly
               to your device for easy access:
             </p>
             <ul className="list-disc list-inside space-y-2 text-zinc-400">
               <li>On mobile: Tap the share button and select "Add to Home Screen"</li>
-              <li>On desktop: Click the install icon in the address bar</li>
+              <li>On desktop: Click the install icon in the address bar (PWA support)</li>
               <li>Or simply bookmark the link for quick access</li>
             </ul>
           </div>
