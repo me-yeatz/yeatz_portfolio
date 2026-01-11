@@ -47,7 +47,7 @@ export default function DevAppsPage() {
               <span className="text-sm font-medium">HTML5</span>
             </div>
             <div className="flex items-center gap-2 bg-zinc-800 px-4 py-2 rounded-full">
-              <img src="https://cdn.simpleicons.org/css3/1572B6" alt="CSS3" className="w-5 h-5" />
+              <img src="https://cdn.simpleicons.org/css/1572B6" alt="CSS3" className="w-5 h-5" />
               <span className="text-sm font-medium">CSS3</span>
             </div>
             <div className="flex items-center gap-2 bg-zinc-800 px-4 py-2 rounded-full">
