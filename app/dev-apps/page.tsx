@@ -10,18 +10,24 @@ const apps = [
     title: "Brutalist Notes",
     description: "Note-taking and documentation system designed for technical professionals. Capture, organize, and retrieve your architectural notes with ease.",
     url: "https://brutalist-note.vercel.app",
+    repoUrl: "https://github.com/me-yeatz/Brutalist-Note",
+    downloadUrl: "https://github.com/me-yeatz/Brutalist-Note/archive/refs/heads/main.zip",
     logo: "/Apps icon.png",
   },
   {
     title: "Chronicle",
     description: "A minimalist personal planning, journaling, and productivity application with AI-powered insights to track your goals and patterns.",
     url: "https://chronicle-yeatz.vercel.app",
+    repoUrl: "https://github.com/me-yeatz/Chronicle",
+    downloadUrl: "https://github.com/me-yeatz/Chronicle/archive/refs/heads/main.zip",
     logo: "/Apps icon.png",
   },
   {
     title: "Monolith Ledge",
     description: "Project planning and organization application. Manage your architectural projects, tasks, and documentation in one powerful platform.",
     url: "https://monolith-ledge.vercel.app",
+    repoUrl: "https://github.com/me-yeatz/Monolith-Ledge",
+    downloadUrl: "https://github.com/me-yeatz/Monolith-Ledge/archive/refs/heads/main.zip",
     logo: "/Apps icon.png",
   },
 ];
@@ -108,27 +114,52 @@ export default function DevAppsPage() {
           <div className="grid grid-cols-1 gap-8 md:grid-cols-2 lg:grid-cols-3">
             {apps.map((app) => (
               <Card key={app.title}>
-                <Link href={app.url} target="_blank" rel="noopener noreferrer">
-                  <article className="relative w-full h-full p-6 hover:bg-zinc-900/50 transition-colors">
-                    <div className="w-16 h-16 mb-4 relative">
-                      <Image
-                        src={app.logo}
-                        alt={app.title}
-                        width={64}
-                        height={64}
-                        className="object-contain"
-                      />
-                    </div>
-                    <h3 className="text-xl font-bold text-zinc-100 mb-2">
-                      {app.title}
-                    </h3>
-                    <p className="text-zinc-400 mb-4">{app.description}</p>
-                    <div className="flex items-center gap-2 text-sm text-zinc-300 hover:text-zinc-100">
-                      <span>Open App</span>
+                <article className="relative w-full h-full p-6 flex flex-col">
+                  <div className="w-16 h-16 mb-4 relative">
+                    <Image
+                      src={app.logo}
+                      alt={app.title}
+                      width={64}
+                      height={64}
+                      className="object-contain"
+                    />
+                  </div>
+                  <h3 className="text-xl font-bold text-zinc-100 mb-2">
+                    {app.title}
+                  </h3>
+                  <p className="text-zinc-400 mb-4 flex-grow">{app.description}</p>
+
+                  <div className="flex flex-col gap-3 mt-4">
+                    <Link
+                      href={app.url}
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      className="inline-flex items-center justify-center gap-2 px-4 py-2 text-sm font-semibold transition-all bg-zinc-100 text-zinc-900 rounded-md hover:bg-zinc-300 w-full"
+                    >
+                      <span>Open Live App</span>
                       <span aria-hidden="true">&rarr;</span>
-                    </div>
-                  </article>
-                </Link>
+                    </Link>
+
+                    <Link
+                      href={app.downloadUrl}
+                      className="inline-flex items-center justify-center gap-2 px-4 py-2 text-sm font-semibold transition-all border border-zinc-700 text-zinc-300 rounded-md hover:bg-zinc-800 hover:text-zinc-100 w-full"
+                    >
+                      <svg width="16" height="16" viewBox="0 0 16 16" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M8 12l-4-4h2.5V3h3v5H12L8 12zM2 13v1h12v-1H2z" />
+                      </svg>
+                      <span>Download Source</span>
+                    </Link>
+
+                    <Link
+                      href={app.repoUrl}
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      className="text-xs text-zinc-500 hover:text-zinc-300 text-center transition-colors"
+                    >
+                      View on GitHub
+                    </Link>
+                  </div>
+                </article>
               </Card>
             ))}
           </div>
