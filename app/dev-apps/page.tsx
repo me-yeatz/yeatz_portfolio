@@ -43,51 +43,35 @@ export default function DevAppsPage() {
           {/* Tech Stack Badges */}
           <div className="mt-8 flex flex-wrap justify-center lg:justify-start gap-4">
             <div className="flex items-center gap-2 bg-zinc-800 px-4 py-2 rounded-full">
-              <svg className="w-5 h-5 text-orange-500" fill="currentColor" viewBox="0 0 24 24">
-                <path d="M12.0001 2C6.47742 2 2 6.47742 2 12.0001C2 17.5228 6.47742 22 12.0001 22C17.5228 22 22 17.5228 22 12.0001C22 6.47742 17.5228 2 12.0001 2ZM12.0001 20C7.58178 20 4 16.4182 4 12.0001C4 7.58178 7.58178 4 12.0001 4C16.4182 4 20 7.58178 20 12.0001C20 16.4182 16.4182 20 12.0001 20ZM12 6L15 10H13V14H11V10H9L12 6Z"/>
-              </svg>
+              <img src="https://cdn.simpleicons.org/html5/E34F26" alt="HTML5" className="w-5 h-5" />
               <span className="text-sm font-medium">HTML5</span>
             </div>
             <div className="flex items-center gap-2 bg-zinc-800 px-4 py-2 rounded-full">
-              <svg className="w-5 h-5 text-blue-500" fill="currentColor" viewBox="0 0 24 24">
-                <path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm0 18c-4.42 0-8-3.58-8-8s3.58-8 8-8 8 3.58 8 8-3.58 8-8 8zm-1-13h2v10h-2z"/>
-              </svg>
+              <img src="https://cdn.simpleicons.org/css3/1572B6" alt="CSS3" className="w-5 h-5" />
               <span className="text-sm font-medium">CSS3</span>
             </div>
             <div className="flex items-center gap-2 bg-zinc-800 px-4 py-2 rounded-full">
-              <svg className="w-5 h-5 text-yellow-500" fill="currentColor" viewBox="0 0 24 24">
-                <path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm0 18c-4.42 0-8-3.58-8-8s3.58-8 8-8 8 3.58 8 8-3.58 8-8 8zm-1-13h2v10h-2z"/>
-              </svg>
+              <img src="https://cdn.simpleicons.org/javascript/F7DF1E" alt="JavaScript" className="w-5 h-5" />
               <span className="text-sm font-medium">JavaScript</span>
             </div>
             <div className="flex items-center gap-2 bg-zinc-800 px-4 py-2 rounded-full">
-              <svg className="w-5 h-5 text-blue-400" fill="currentColor" viewBox="0 0 24 24">
-                <path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm0 18c-4.42 0-8-3.58-8-8s3.58-8 8-8 8 3.58 8 8-3.58 8-8 8zm-1-13h2v10h-2z"/>
-              </svg>
+              <img src="https://cdn.simpleicons.org/typescript/3178C6" alt="TypeScript" className="w-5 h-5" />
               <span className="text-sm font-medium">TypeScript</span>
             </div>
             <div className="flex items-center gap-2 bg-zinc-800 px-4 py-2 rounded-full">
-              <svg className="w-5 h-5 text-cyan-400" fill="currentColor" viewBox="0 0 24 24">
-                <path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm0 18c-4.42 0-8-3.58-8-8s3.58-8 8-8 8 3.58 8 8-3.58 8-8 8zm-1-13h2v10h-2z"/>
-              </svg>
+              <img src="https://cdn.simpleicons.org/react/61DAFB" alt="React" className="w-5 h-5" />
               <span className="text-sm font-medium">React</span>
             </div>
             <div className="flex items-center gap-2 bg-zinc-800 px-4 py-2 rounded-full">
-              <svg className="w-5 h-5 text-purple-500" fill="currentColor" viewBox="0 0 24 24">
-                <path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm0 18c-4.42 0-8-3.58-8-8s3.58-8 8-8 8 3.58 8 8-3.58 8-8 8zm-1-13h2v10h-2z"/>
-              </svg>
+              <img src="https://cdn.simpleicons.org/electron/47848F" alt="Electron" className="w-5 h-5" />
               <span className="text-sm font-medium">Electron</span>
             </div>
             <div className="flex items-center gap-2 bg-zinc-800 px-4 py-2 rounded-full">
-              <svg className="w-5 h-5 text-red-500" fill="currentColor" viewBox="0 0 24 24">
-                <path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm0 18c-4.42 0-8-3.58-8-8s3.58-8 8-8 8 3.58 8 8-3.58 8-8 8zm-1-13h2v10h-2z"/>
-              </svg>
+              <img src="https://cdn.simpleicons.org/figma/F24E1E" alt="Figma" className="w-5 h-5" />
               <span className="text-sm font-medium">Figma</span>
             </div>
             <div className="flex items-center gap-2 bg-zinc-800 px-4 py-2 rounded-full">
-              <svg className="w-5 h-5 text-green-500" fill="currentColor" viewBox="0 0 24 24">
-                <path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm0 18c-4.42 0-8-3.58-8-8s3.58-8 8-8 8 3.58 8 8-3.58 8-8 8zm-1-13h2v10h-2z"/>
-              </svg>
+              <img src="https://cdn.simpleicons.org/vite/646CFF" alt="Vite" className="w-5 h-5" />
               <span className="text-sm font-medium">Vite</span>
             </div>
           </div>
