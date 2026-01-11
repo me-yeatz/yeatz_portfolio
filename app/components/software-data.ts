@@ -10,7 +10,7 @@ export const softwareList = [
   },
   {
     name: "NanoCAD",
-    iconUrl: "https://cdn.simpleicons.org/autocad/E51937",
+    iconUrl: "/Software Mastery/NanoCAD.png",
   },
   {
     name: "ArchiCAD",
@@ -30,7 +30,7 @@ export const softwareList = [
   },
   {
     name: "V-Ray",
-    iconUrl: "https://cdn.simpleicons.org/chaos/E4002B",
+    iconUrl: "/Software Mastery/V ray.png",
   },
   {
     name: "Enscape",
@@ -62,7 +62,7 @@ export const softwareList = [
   },
   {
     name: "Canva",
-    iconUrl: "https://cdn.simpleicons.org/canva/00C4CC",
+    iconUrl: "/Software Mastery/canva-seeklogo.png",
   },
   {
     name: "VS Code",

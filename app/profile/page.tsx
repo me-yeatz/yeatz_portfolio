@@ -383,18 +383,18 @@ export default function ProfilePage() {
             <Card>
               <div className="p-6">
                 <div className="grid md:grid-cols-2 gap-6 text-zinc-400">
-                  <Link href="mailto:mhyeatz@outlook.com" className="flex items-center gap-3 hover:text-zinc-100 transition-colors">
+                  <Link href="mailto:me.yeatz@outlook.com" className="flex items-center gap-3 hover:text-zinc-100 transition-colors">
                     <Mail size={20} className="text-zinc-500" />
                     <div>
                       <p className="text-zinc-500 text-xs mb-1">Email</p>
-                      <p className="text-zinc-300">mhyeatz@outlook.com</p>
+                      <p className="text-zinc-300">me.yeatz@outlook.com</p>
                     </div>
                   </Link>
                   <div className="flex items-center gap-3">
                     <Phone size={20} className="text-zinc-500" />
                     <div>
                       <p className="text-zinc-500 text-xs mb-1">Phone</p>
-                      <p className="text-zinc-300">017 3131313</p>
+                      <p className="text-zinc-300">017 2101898</p>
                     </div>
                   </div>
                   <div className="flex items-center gap-3">
