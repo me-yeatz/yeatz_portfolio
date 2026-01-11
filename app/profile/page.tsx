@@ -309,7 +309,7 @@ export default function ProfilePage() {
                   <p className="text-sm text-zinc-500 mb-3">Ethical AI Implementation & Integration</p>
                   <div className="aspect-video bg-zinc-800 rounded-lg flex items-center justify-center overflow-hidden">
                     <Image
-                      src="/Certifications/microsoft-responsible-ai-copilot.png"
+                      src="/Certifications/Microsoft Certificat.png"
                       alt="Microsoft Certified: Responsible AI with GitHub Copilot Certificate"
                       width={300}
                       height={200}

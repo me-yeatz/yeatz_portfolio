@@ -10,7 +10,7 @@ export const softwareList = [
   },
   {
     name: "NanoCAD",
-    fallbackText: "NC",
+    iconUrl: "https://cdn.simpleicons.org/autocad/E51937",
   },
   {
     name: "ArchiCAD",
@@ -34,15 +34,15 @@ export const softwareList = [
   },
   {
     name: "Enscape",
-    fallbackText: "EN",
+    iconUrl: "https://cdn.simpleicons.org/unity/000000",
   },
   {
     name: "Lumion",
-    fallbackText: "LU",
+    iconUrl: "https://cdn.simpleicons.org/unrealengine/0E1128",
   },
   {
     name: "Antigravity",
-    fallbackText: "AG",
+    iconUrl: "https://cdn.simpleicons.org/googlegemini/8E75B2",
   },
   {
     name: "Primavera",
