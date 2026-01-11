@@ -22,11 +22,11 @@ export const softwareList = [
   },
   {
     name: "Photoshop",
-    iconUrl: "https://cdn.simpleicons.org/adobephotoshop/31A8FF",
+    iconUrl: "/Software Mastery/Adobe Photoshop.png",
   },
   {
     name: "Illustrator",
-    iconUrl: "https://cdn.simpleicons.org/adobeillustrator/FF9A00",
+    iconUrl: "/Software Mastery/Adobe Illustrator.png",
   },
   {
     name: "V-Ray",
@@ -34,11 +34,11 @@ export const softwareList = [
   },
   {
     name: "Enscape",
-    iconUrl: "https://cdn.simpleicons.org/unity/000000",
+    iconUrl: "/Software Mastery/Enscape.png",
   },
   {
     name: "Lumion",
-    iconUrl: "https://cdn.simpleicons.org/unrealengine/0E1128",
+    iconUrl: "/Software Mastery/Lumion.png",
   },
   {
     name: "Antigravity",
