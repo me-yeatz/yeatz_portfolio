@@ -10,19 +10,19 @@ const apps = [
     title: "Brutalist Notes",
     description: "Note-taking and documentation system designed for technical professionals. Capture, organize, and retrieve your architectural notes with ease.",
     url: "https://brutalist-note.vercel.app",
-    logo: "https://brutalist-note.vercel.app/logo.png",
+    logo: "/Apps icon.png",
   },
   {
     title: "Chronicle",
     description: "A minimalist personal planning, journaling, and productivity application with AI-powered insights to track your goals and patterns.",
     url: "https://chronicle-yeatz.vercel.app",
-    logo: "https://chronicle-yeatz.vercel.app/logo.png",
+    logo: "/Apps icon.png",
   },
   {
     title: "Monolith Ledge",
     description: "Project planning and organization application. Manage your architectural projects, tasks, and documentation in one powerful platform.",
     url: "https://monolith-ledge.vercel.app",
-    logo: "https://monolith-ledge.vercel.app/logo.png",
+    logo: "/Apps icon.png",
   },
 ];
 
@@ -79,7 +79,7 @@ export default function DevAppsPage() {
         <div className="w-full h-px bg-zinc-800" />
 
         {/* Philosophy Section */}
-        <div className="max-w-4xl mx-auto space-y-4">
+        <div className="max-w-6xl mx-auto space-y-4">
           <h3 className="text-2xl font-bold text-zinc-100">My Philosophy</h3>
           <Card>
             <div className="p-6">
