@@ -6,7 +6,7 @@ export const softwareList = [
   },
   {
     name: "ZWCAD",
-    iconUrl: "https://cdn.simpleicons.org/autocad/E51937",
+    iconUrl: "/Software Mastery/ZWcad.png",
   },
   {
     name: "NanoCAD",
@@ -14,7 +14,7 @@ export const softwareList = [
   },
   {
     name: "ArchiCAD",
-    iconUrl: "https://cdn.simpleicons.org/graphisoft/0078D7",
+    iconUrl: "/Software Mastery/Archicad.png",
   },
   {
     name: "SketchUp",
@@ -46,7 +46,7 @@ export const softwareList = [
   },
   {
     name: "Primavera",
-    iconUrl: "https://cdn.simpleicons.org/oracle/F80000",
+    iconUrl: "/Software Mastery/Primavera.png",
   },
   {
     name: "MS Office",
@@ -66,7 +66,7 @@ export const softwareList = [
   },
   {
     name: "VS Code",
-    iconUrl: "https://cdn.simpleicons.org/visualstudiocode/007ACC",
+    iconUrl: "/Software Mastery/Visual Code Studio.png",
   },
   {
     name: "VS Codium",
