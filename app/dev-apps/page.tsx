@@ -12,15 +12,15 @@ const apps = [
     url: "https://brutalist-note.vercel.app",
     repoUrl: "https://github.com/me-yeatz/Brutalist-Note",
     downloadUrl: "https://github.com/me-yeatz/Brutalist-Note/archive/refs/heads/main.zip",
-    logo: "/Apps icon.png",
+    image: "/Apps Preview/brutalist-note.png",
   },
   {
     title: "Chronicle",
     description: "A minimalist personal planning, journaling, and productivity application with AI-powered insights to track your goals and patterns.",
-    url: "https://chronicle-yeatz.vercel.app",
+    url: "https://chronicle-ochre.vercel.app/",
     repoUrl: "https://github.com/me-yeatz/Chronicle",
     downloadUrl: "https://github.com/me-yeatz/Chronicle/archive/refs/heads/main.zip",
-    logo: "/Apps icon.png",
+    image: "/Apps Preview/chronicle.png",
   },
   {
     title: "Gridblock",
@@ -28,7 +28,7 @@ const apps = [
     url: "https://gridblock-drab.vercel.app/",
     repoUrl: "https://github.com/me-yeatz/Gridblock",
     downloadUrl: "https://github.com/me-yeatz/Gridblock/archive/refs/heads/main.zip",
-    logo: "/Apps icon.png",
+    image: "/Apps Preview/gridblock.png",
   },
   {
     title: "Kanbaneo",
@@ -36,7 +36,7 @@ const apps = [
     url: "https://kanbaneo.vercel.app/",
     repoUrl: "https://github.com/me-yeatz/Kanbaneo",
     downloadUrl: "https://github.com/me-yeatz/Kanbaneo/archive/refs/heads/main.zip",
-    logo: "/Apps icon.png",
+    image: "/Apps Preview/kanbaneo.png",
   },
   {
     title: "Healing Journal",
@@ -44,7 +44,7 @@ const apps = [
     url: "https://healing-journal-theta.vercel.app/",
     repoUrl: "https://github.com/me-yeatz/Healing-Journal",
     downloadUrl: "https://github.com/me-yeatz/Healing-Journal/archive/refs/heads/main.zip",
-    logo: "/Apps icon.png",
+    image: "/Apps Preview/healing-journal.png",
   },
   {
     title: "Monolith Ledge",
@@ -52,7 +52,7 @@ const apps = [
     url: "https://monolith-ledge.vercel.app",
     repoUrl: "https://github.com/me-yeatz/Monolith-Ledge",
     downloadUrl: "https://github.com/me-yeatz/Monolith-Ledge/archive/refs/heads/main.zip",
-    logo: "/Apps icon.png",
+    image: "/Apps Preview/monolith-ledge.png",
   },
 ];
 
@@ -134,54 +134,63 @@ export default function DevAppsPage() {
 
         {/* Apps Grid */}
         <div className="max-w-6xl mx-auto">
-          <h3 className="text-2xl font-bold text-zinc-100 mb-8">My Applications</h3>
+          <div className="flex items-center justify-between mb-8">
+            <h3 className="text-2xl font-bold text-zinc-100">My Applications</h3>
+          </div>
           <div className="grid grid-cols-1 gap-8 md:grid-cols-2 lg:grid-cols-3">
             {apps.map((app) => (
               <Card key={app.title}>
-                <article className="relative w-full h-full p-6 flex flex-col">
-                  <div className="w-16 h-16 mb-4 relative">
+                <article className="relative w-full h-full flex flex-col overflow-hidden">
+                  <div className="aspect-video w-full relative overflow-hidden group">
                     <Image
-                      src={app.logo}
+                      src={app.image}
                       alt={app.title}
-                      width={64}
-                      height={64}
-                      className="object-contain"
+                      fill
+                      className="object-cover transition-transform duration-500 group-hover:scale-110"
                     />
+                    <div className="absolute inset-0 bg-black/40 group-hover:bg-black/20 transition-colors" />
                   </div>
-                  <h3 className="text-xl font-bold text-zinc-100 mb-2">
-                    {app.title}
-                  </h3>
-                  <p className="text-zinc-400 mb-4 flex-grow">{app.description}</p>
 
-                  <div className="flex flex-col gap-3 mt-4">
-                    <Link
-                      href={app.url}
-                      target="_blank"
-                      rel="noopener noreferrer"
-                      className="inline-flex items-center justify-center gap-2 px-4 py-2 text-sm font-semibold transition-all bg-zinc-100 text-zinc-900 rounded-md hover:bg-zinc-300 w-full"
-                    >
-                      <span>Open Live App</span>
-                      <span aria-hidden="true">&rarr;</span>
-                    </Link>
+                  <div className="p-6 flex flex-col flex-grow">
+                    <h3 className="text-xl font-bold text-zinc-100 mb-2">
+                      {app.title}
+                    </h3>
+                    <p className="text-zinc-400 text-sm mb-6 flex-grow line-clamp-3">
+                      {app.description}
+                    </p>
 
-                    <Link
-                      href={app.downloadUrl}
-                      className="inline-flex items-center justify-center gap-2 px-4 py-2 text-sm font-semibold transition-all border border-zinc-700 text-zinc-300 rounded-md hover:bg-zinc-800 hover:text-zinc-100 w-full"
-                    >
-                      <svg width="16" height="16" viewBox="0 0 16 16" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
-                        <path d="M8 12l-4-4h2.5V3h3v5H12L8 12zM2 13v1h12v-1H2z" />
-                      </svg>
-                      <span>Download Source</span>
-                    </Link>
+                    <div className="flex flex-col gap-3">
+                      <Link
+                        href={app.url}
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        className="inline-flex items-center justify-center gap-2 px-4 py-2 text-sm font-semibold transition-all bg-zinc-100 text-zinc-900 rounded-md hover:bg-zinc-300 w-full"
+                      >
+                        <span>Open Live App</span>
+                        <span aria-hidden="true">&rarr;</span>
+                      </Link>
 
-                    <Link
-                      href={app.repoUrl}
-                      target="_blank"
-                      rel="noopener noreferrer"
-                      className="text-xs text-zinc-500 hover:text-zinc-300 text-center transition-colors"
-                    >
-                      View on GitHub
-                    </Link>
+                      <div className="grid grid-cols-2 gap-3">
+                        <Link
+                          href={app.downloadUrl}
+                          className="inline-flex items-center justify-center gap-2 px-3 py-2 text-xs font-semibold transition-all border border-zinc-700 text-zinc-300 rounded-md hover:bg-zinc-800 hover:text-zinc-100"
+                        >
+                          <svg width="14" height="14" viewBox="0 0 16 16" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M8 12l-4-4h2.5V3h3v5H12L8 12zM2 13v1h12v-1H2z" />
+                          </svg>
+                          <span>Download</span>
+                        </Link>
+
+                        <Link
+                          href={app.repoUrl}
+                          target="_blank"
+                          rel="noopener noreferrer"
+                          className="inline-flex items-center justify-center gap-2 px-3 py-2 text-xs font-semibold transition-all border border-zinc-700 text-zinc-300 rounded-md hover:bg-zinc-800 hover:text-zinc-100"
+                        >
+                          <span>Repository</span>
+                        </Link>
+                      </div>
+                    </div>
                   </div>
                 </article>
               </Card>
