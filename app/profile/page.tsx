@@ -305,12 +305,12 @@ export default function ProfilePage() {
 
               <Card>
                 <div className="p-6">
-                  <h4 className="text-lg font-bold text-zinc-100 mb-2">Microsoft Certified: Responsible AI with GitHub Copilot</h4>
+                  <h4 className="text-lg font-bold text-zinc-100 mb-2">Responsible AI with GitHub Copilot</h4>
                   <p className="text-sm text-zinc-500 mb-3">Ethical AI Implementation & Integration</p>
                   <div className="aspect-video bg-zinc-800 rounded-lg flex items-center justify-center overflow-hidden">
                     <Image
-                      src="/Certifications/Microsoft Certificat.png"
-                      alt="Microsoft Certified: Responsible AI with GitHub Copilot Certificate"
+                      src="/Certifications/Responsible AI with GitHub Copilot_page-0001.jpg"
+                      alt="Responsible AI with GitHub Copilot Certificate"
                       width={300}
                       height={200}
                       className="object-contain"
@@ -321,12 +321,28 @@ export default function ProfilePage() {
 
               <Card>
                 <div className="p-6">
-                  <h4 className="text-lg font-bold text-zinc-100 mb-2">Technology & Development Certifications</h4>
-                  <p className="text-sm text-zinc-500 mb-3">Software development and emerging technologies</p>
+                  <h4 className="text-lg font-bold text-zinc-100 mb-2">Build a Generative AI Chat App</h4>
+                  <p className="text-sm text-zinc-500 mb-3">Generative AI Development Certification</p>
                   <div className="aspect-video bg-zinc-800 rounded-lg flex items-center justify-center overflow-hidden">
                     <Image
-                      src="/Certifications/tech-development-cert.png"
-                      alt="Technology and Development Certification"
+                      src="/Certifications/Build a generative AI chat app_page-0001.jpg"
+                      alt="Build a Generative AI Chat App Certificate"
+                      width={300}
+                      height={200}
+                      className="object-contain"
+                    />
+                  </div>
+                </div>
+              </Card>
+
+              <Card>
+                <div className="p-6">
+                  <h4 className="text-lg font-bold text-zinc-100 mb-2">Develop an AI App with Microsoft Foundry SDK</h4>
+                  <p className="text-sm text-zinc-500 mb-3">Microsoft AI Development Certification</p>
+                  <div className="aspect-video bg-zinc-800 rounded-lg flex items-center justify-center overflow-hidden">
+                    <Image
+                      src="/Certifications/Develop an AI app with the Microsoft Foundry SDK_page-0001.jpg"
+                      alt="Develop an AI App with Microsoft Foundry SDK Certificate"
                       width={300}
                       height={200}
                       className="object-contain"
