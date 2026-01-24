@@ -42,6 +42,12 @@ const apps = [
     url: "https://monolith-ledge.vercel.app",
     image: "/Apps Preview/monolith-ledge.png",
   },
+  {
+    title: "ZenTime",
+    description: "Mindfulness and meditation application designed to help you find peace and focus in your daily routine. A serene space for mental wellness.",
+    url: "https://zen-time-khuf9zq7m-yeatz.vercel.app/",
+    image: "/Apps Preview/Zentime Showcase.png",
+  },
 ];
 
 export default function DevAppsPage() {

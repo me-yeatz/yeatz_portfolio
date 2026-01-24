@@ -115,6 +115,33 @@ export default function ArchitecturePage() {
             </div>
           </div>
         </div>
+
+        {/* Collaborations Teams */}
+        <div className="max-w-6xl mx-auto mt-16 space-y-8">
+          <h3 className="text-2xl font-bold text-zinc-100 text-center">Collaboration Teams</h3>
+          <div className="flex flex-wrap justify-center gap-8 items-center">
+            <div className="flex flex-col items-center">
+              <div className="w-20 h-20 rounded-full bg-zinc-800 flex items-center justify-center overflow-hidden">
+                <img
+                  src="/collaboration team/AMsquare Interior.jpg"
+                  alt="AMsquare Interior"
+                  className="object-contain w-full h-full p-2"
+                />
+              </div>
+              <span className="mt-2 text-zinc-300 text-sm">AMsquare Interior</span>
+            </div>
+            <div className="flex flex-col items-center">
+              <div className="w-20 h-20 rounded-full bg-zinc-800 flex items-center justify-center overflow-hidden">
+                <img
+                  src="/collaboration team/Khaja Studio.jpeg"
+                  alt="Khaja Studio"
+                  className="object-contain w-full h-full p-2"
+                />
+              </div>
+              <span className="mt-2 text-zinc-300 text-sm">Khaja Studio</span>
+            </div>
+          </div>
+        </div>
       </div>
     </div>
   );

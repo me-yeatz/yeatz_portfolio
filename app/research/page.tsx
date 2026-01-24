@@ -6,19 +6,19 @@ import { Card } from "../components/card";
 // Sample research articles - you'll add your real research here
 const researchItems = [
   {
-    title: "Research Topic 1",
+    title: "Freelance Defender Apps: An Open-Source Framework to Counter Systemic Exploitation in Malaysia's Digital Gig Economy for Architects and Developers",
     description:
-      "Brief summary of your research findings, experiments, or case study",
+      "Freelance Defender Apps is an open-source, cloud-native framework I developed to address systemic exploitation in Malaysia's digital gig economy, with a focus on freelance architects and developers. It rebalances power dynamics by integrating technical-ethical tools for fair contracting, automated compliance, and transparent project governance",
     date: "2024-01-15",
-    category: "Case Study",
+    category: "Architect freelancer rights",
     readTime: "5 min read",
   },
   {
-    title: "Research Topic 2",
+    title: "Streamlining Hybrid Workflows for Malaysian AEC Building Approvals",
     description:
-      "Brief summary of your research findings, experiments, or case study",
+      "This research addresses inefficiencies in Malaysia's building approval process where mandatory dual online and hardcopy submissions cause delays, increase costs, and disrupt project timelines. I propose a practical framework to streamline these hybrid workflows, integrating clearer guidelines and process improvements to create a faster, more predictable approval system for architects, engineers, and contractors.",
     date: "2024-01-10",
-    category: "Experiment",
+    category: "AEC Process Optimization",
     readTime: "8 min read",
   },
   // Add more research items here
