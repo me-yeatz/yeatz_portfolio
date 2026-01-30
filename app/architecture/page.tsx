@@ -129,9 +129,10 @@ export default function ArchitecturePage() {
                   className="object-contain w-full h-full p-4"
                 />
               </div>
-              <h4 className="text-zinc-100 font-bold text-lg leading-tight mb-2">
-                AMSQUARE INTERIORS SDN. BHD. (1347956-X)
+              <h4 className="text-zinc-100 font-bold text-lg leading-tight">
+                AMSQUARE INTERIORS SDN. BHD.
               </h4>
+              <span className="text-zinc-500 text-xs mb-2">(1347956-X)</span>
               <div className="flex items-start gap-2 text-zinc-400 text-sm mb-3">
                 <MapPin className="w-4 h-4 mt-1 flex-shrink-0" />
                 <p>
@@ -157,9 +158,10 @@ export default function ArchitecturePage() {
                   className="object-contain w-full h-full p-4"
                 />
               </div>
-              <h4 className="text-zinc-100 font-bold text-lg leading-tight mb-2">
+              <h4 className="text-zinc-100 font-bold text-lg leading-tight">
                 KHAJA STUDIO
               </h4>
+              <span className="text-sm text-zinc-400 mb-2">(003162092-M)</span>
               <div className="flex items-start gap-2 text-zinc-400 text-sm mb-3">
                 <MapPin className="w-4 h-4 mt-1 flex-shrink-0" />
                 <p>
