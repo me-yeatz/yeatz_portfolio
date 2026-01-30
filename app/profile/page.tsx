@@ -3,7 +3,7 @@ import Link from "next/link";
 import Image from "next/image";
 import { Navigation } from "../components/nav";
 import { Card } from "../components/card";
-import { Github, Linkedin, Mail, Phone, MapPin } from "lucide-react";
+import { Github, Linkedin, Mail, Phone, MapPin, Award, ExternalLink, ShieldCheck } from "lucide-react";
 import { SoftwareItem } from "../components/software-icons";
 import { softwareList } from "../components/software-data";
 
@@ -275,13 +275,13 @@ export default function ProfilePage() {
                 <div className="p-6">
                   <h4 className="text-lg font-bold text-zinc-100 mb-2">Vercel Certified Professional</h4>
                   <p className="text-sm text-zinc-500 mb-3">Vercel Deployment & Hosting Certification</p>
-                  <div className="aspect-video bg-zinc-800 rounded-lg flex items-center justify-center overflow-hidden">
+                  <div className="aspect-video bg-zinc-800 rounded-lg flex items-center justify-center overflow-hidden group">
                     <Image
                       src="/Certifications/Cert Vercel.png"
                       alt="Vercel Certified Professional Certificate"
                       width={300}
                       height={200}
-                      className="object-contain"
+                      className="object-contain transition-transform duration-500 group-hover:scale-110"
                     />
                   </div>
                 </div>
@@ -291,13 +291,13 @@ export default function ProfilePage() {
                 <div className="p-6">
                   <h4 className="text-lg font-bold text-zinc-100 mb-2">Hive University Certification</h4>
                   <p className="text-sm text-zinc-500 mb-3">Advanced Web Development Program</p>
-                  <div className="aspect-video bg-zinc-800 rounded-lg flex items-center justify-center overflow-hidden">
+                  <div className="aspect-video bg-zinc-800 rounded-lg flex items-center justify-center overflow-hidden group">
                     <Image
                       src="/Certifications/Cert_Hive University.jpeg"
                       alt="Hive University Certification"
                       width={300}
                       height={200}
-                      className="object-contain"
+                      className="object-contain transition-transform duration-500 group-hover:scale-110"
                     />
                   </div>
                 </div>
@@ -307,13 +307,13 @@ export default function ProfilePage() {
                 <div className="p-6">
                   <h4 className="text-lg font-bold text-zinc-100 mb-2">Responsible AI with GitHub Copilot</h4>
                   <p className="text-sm text-zinc-500 mb-3">Ethical AI Implementation & Integration</p>
-                  <div className="aspect-video bg-zinc-800 rounded-lg flex items-center justify-center overflow-hidden">
+                  <div className="aspect-video bg-zinc-800 rounded-lg flex items-center justify-center overflow-hidden group">
                     <Image
                       src="/Certifications/Responsible AI with GitHub Copilot_page-0001.jpg"
                       alt="Responsible AI with GitHub Copilot Certificate"
                       width={300}
                       height={200}
-                      className="object-contain"
+                      className="object-contain transition-transform duration-500 group-hover:scale-110"
                     />
                   </div>
                 </div>
@@ -323,13 +323,13 @@ export default function ProfilePage() {
                 <div className="p-6">
                   <h4 className="text-lg font-bold text-zinc-100 mb-2">Build a Generative AI Chat App</h4>
                   <p className="text-sm text-zinc-500 mb-3">Generative AI Development Certification</p>
-                  <div className="aspect-video bg-zinc-800 rounded-lg flex items-center justify-center overflow-hidden">
+                  <div className="aspect-video bg-zinc-800 rounded-lg flex items-center justify-center overflow-hidden group">
                     <Image
                       src="/Certifications/Build a generative AI chat app_page-0001.jpg"
                       alt="Build a Generative AI Chat App Certificate"
                       width={300}
                       height={200}
-                      className="object-contain"
+                      className="object-contain transition-transform duration-500 group-hover:scale-110"
                     />
                   </div>
                 </div>
@@ -339,14 +339,72 @@ export default function ProfilePage() {
                 <div className="p-6">
                   <h4 className="text-lg font-bold text-zinc-100 mb-2">Develop an AI App with Microsoft Foundry SDK</h4>
                   <p className="text-sm text-zinc-500 mb-3">Microsoft AI Development Certification</p>
-                  <div className="aspect-video bg-zinc-800 rounded-lg flex items-center justify-center overflow-hidden">
+                  <div className="aspect-video bg-zinc-800 rounded-lg flex items-center justify-center overflow-hidden group">
                     <Image
                       src="/Certifications/Develop an AI app with the Microsoft Foundry SDK_page-0001.jpg"
                       alt="Develop an AI App with Microsoft Foundry SDK Certificate"
                       width={300}
                       height={200}
-                      className="object-contain"
+                      className="object-contain transition-transform duration-500 group-hover:scale-110"
                     />
+                  </div>
+                </div>
+              </Card>
+            </div>
+          </div>
+
+          {/* Professional Verifications */}
+          <div className="space-y-4">
+            <div className="flex items-center gap-2">
+              <h3 className="text-2xl font-bold text-zinc-100">Professional Verifications</h3>
+              <ShieldCheck className="w-6 h-6 text-emerald-500" />
+            </div>
+            <p className="text-zinc-400 text-sm">Official course completions verified via Alison Learning Platform.</p>
+            <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
+              <Card>
+                <div className="p-6 flex flex-col h-full">
+                  <div className="flex justify-between items-start mb-4">
+                    <Award className="w-8 h-8 text-zinc-500" />
+                    <span className="text-[10px] uppercase tracking-widest text-zinc-500 border border-zinc-800 px-2 py-1 rounded">Alison Verified</span>
+                  </div>
+                  <h4 className="text-lg font-bold text-zinc-100 mb-1">
+                    OSHA Bloodborne Pathogens (BBP)
+                  </h4>
+                  <p className="text-sm text-zinc-400 mb-4">Health & Safety in the Workplace</p>
+
+                  <div className="mt-auto pt-4 border-t border-zinc-800/50 space-y-2">
+                    <div className="flex justify-between text-xs">
+                      <span className="text-zinc-500">Learner ID:</span>
+                      <span className="text-zinc-300 font-mono">49166390</span>
+                    </div>
+                    <div className="flex justify-between text-xs">
+                      <span className="text-zinc-500">Completed:</span>
+                      <span className="text-zinc-300">5th June 2025</span>
+                    </div>
+                  </div>
+                </div>
+              </Card>
+
+              <Card>
+                <div className="p-6 flex flex-col h-full">
+                  <div className="flex justify-between items-start mb-4">
+                    <Award className="w-8 h-8 text-zinc-500" />
+                    <span className="text-[10px] uppercase tracking-widest text-zinc-500 border border-zinc-800 px-2 py-1 rounded">Alison Verified</span>
+                  </div>
+                  <h4 className="text-lg font-bold text-zinc-100 mb-1">
+                    AutoCAD: Basic Practice Drawings
+                  </h4>
+                  <p className="text-sm text-zinc-400 mb-4">Technical Design Proficiency</p>
+
+                  <div className="mt-auto pt-4 border-t border-zinc-800/50 space-y-2">
+                    <div className="flex justify-between text-xs">
+                      <span className="text-zinc-500">Learner ID:</span>
+                      <span className="text-zinc-300 font-mono">49166390</span>
+                    </div>
+                    <div className="flex justify-between text-xs">
+                      <span className="text-zinc-500">Completed:</span>
+                      <span className="text-zinc-300">5th June 2025</span>
+                    </div>
                   </div>
                 </div>
               </Card>
