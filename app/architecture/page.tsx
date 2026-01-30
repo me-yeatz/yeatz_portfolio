@@ -1,6 +1,7 @@
 import React from "react";
 import { Navigation } from "../components/nav";
 import { Card } from "../components/card";
+import { Instagram, MapPin } from "lucide-react";
 
 // Sample architecture projects - you'll add your real projects here
 const projects = [
@@ -120,25 +121,61 @@ export default function ArchitecturePage() {
         <div className="max-w-6xl mx-auto mt-16 space-y-8">
           <h3 className="text-2xl font-bold text-zinc-100 text-center">Collaboration Teams</h3>
           <div className="flex flex-wrap justify-center gap-8 items-center">
-            <div className="flex flex-col items-center">
-              <div className="w-20 h-20 rounded-full bg-zinc-800 flex items-center justify-center overflow-hidden">
+            <div className="flex flex-col items-center group max-w-xs text-center">
+              <div className="w-40 h-40 rounded-lg bg-zinc-800 flex items-center justify-center overflow-hidden transition-all duration-300 group-hover:scale-105 group-hover:bg-zinc-700 mb-4">
                 <img
                   src="/collaboration team/AMsquare Interior.jpg"
                   alt="AMsquare Interior"
-                  className="object-contain w-full h-full p-2"
+                  className="object-contain w-full h-full p-4"
                 />
               </div>
-              <span className="mt-2 text-zinc-300 text-sm">AMsquare Interior</span>
+              <h4 className="text-zinc-100 font-bold text-lg leading-tight mb-2">
+                AMSQUARE INTERIORS SDN. BHD. (1347956-X)
+              </h4>
+              <div className="flex items-start gap-2 text-zinc-400 text-sm mb-3">
+                <MapPin className="w-4 h-4 mt-1 flex-shrink-0" />
+                <p>
+                  A1-03-13A, Arcoris Business Suite, Jalan Kiara<br />
+                  50480 Mont Kiara, Kuala Lumpur.
+                </p>
+              </div>
+              <a
+                href="https://www.instagram.com/amsquare_interiors/"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="flex items-center gap-2 text-zinc-400 hover:text-pink-500 transition-colors duration-200 text-sm"
+              >
+                <Instagram className="w-4 h-4" />
+                <span>@amsquare_interiors</span>
+              </a>
             </div>
-            <div className="flex flex-col items-center">
-              <div className="w-20 h-20 rounded-full bg-zinc-800 flex items-center justify-center overflow-hidden">
+            <div className="flex flex-col items-center group max-w-xs text-center">
+              <div className="w-40 h-40 rounded-lg bg-zinc-800 flex items-center justify-center overflow-hidden transition-all duration-300 group-hover:scale-105 group-hover:bg-zinc-700 mb-4">
                 <img
-                  src="/collaboration team/Khaja Studio.jpeg"
+                  src="/collaboration team/Khaja Studio.png"
                   alt="Khaja Studio"
-                  className="object-contain w-full h-full p-2"
+                  className="object-contain w-full h-full p-4"
                 />
               </div>
-              <span className="mt-2 text-zinc-300 text-sm">Khaja Studio</span>
+              <h4 className="text-zinc-100 font-bold text-lg leading-tight mb-2">
+                KHAJA STUDIO
+              </h4>
+              <div className="flex items-start gap-2 text-zinc-400 text-sm mb-3">
+                <MapPin className="w-4 h-4 mt-1 flex-shrink-0" />
+                <p>
+                  No.2, Jalan Merah Pelangi Satu, U9/19a,<br />
+                  Kelab Golf Monterez, 40150 Shah Alam.
+                </p>
+              </div>
+              <a
+                href="https://www.instagram.com/khajastudio/"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="flex items-center gap-2 text-zinc-400 hover:text-pink-500 transition-colors duration-200 text-sm"
+              >
+                <Instagram className="w-4 h-4" />
+                <span>@khajastudio</span>
+              </a>
             </div>
           </div>
         </div>
