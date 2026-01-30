@@ -161,7 +161,7 @@ export default function ArchitecturePage() {
               <h4 className="text-zinc-100 font-bold text-lg leading-tight">
                 KHAJA STUDIO
               </h4>
-              <span className="text-sm text-zinc-400 mb-2">(003162092-M)</span>
+              <span className="text-zinc-500 text-xs mb-2">(003162092-M)</span>
               <div className="flex items-start gap-2 text-zinc-400 text-sm mb-3">
                 <MapPin className="w-4 h-4 mt-1 flex-shrink-0" />
                 <p>
