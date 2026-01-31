@@ -15,7 +15,7 @@ const navigation = [
 export default function Home() {
   return (
     <div className="flex flex-col items-center justify-center w-screen h-screen overflow-hidden bg-gradient-to-tl from-black via-zinc-600/20 to-black">
-      <nav className="my-16 animate-fade-in">
+      <nav className="my-16 animate-fade-in whitespace-nowrap overflow-x-auto no-scrollbar max-w-[100vw] px-4">
         <ul className="flex items-center justify-center gap-4">
           {navigation.map((item) => (
             <Link
@@ -41,12 +41,12 @@ export default function Home() {
         <div className="aurora aurora-2" />
         <div className="aurora aurora-3" />
       </div>
-      <h1 className="py-3.5 px-0.5 z-10 text-4xl text-transparent duration-1000 bg-white cursor-default text-edge-outline animate-title font-display sm:text-6xl md:text-9xl whitespace-nowrap bg-clip-text ">
+      <h1 className="py-3.5 px-1 z-10 text-4xl text-transparent duration-1000 bg-white cursor-default text-edge-outline animate-title font-display sm:text-6xl md:text-9xl whitespace-nowrap bg-clip-text text-center">
         M.NOR HIDAYAT
       </h1>
 
       <div className="hidden w-screen h-px animate-glow md:block animate-fade-right bg-gradient-to-r from-zinc-300/0 via-zinc-300/50 to-zinc-300/0" />
-      <div className="my-16 text-center animate-fade-in">
+      <div className="my-16 text-center animate-fade-in px-4">
         <h2 className="text-sm text-zinc-500 ">
           Senior Technical Architect × Software Developer × Researcher
           <br />
