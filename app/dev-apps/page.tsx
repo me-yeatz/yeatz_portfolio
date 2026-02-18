@@ -113,8 +113,8 @@ export default function DevAppsPage() {
                 workflows and boost productivity for technical professionals.
               </p>
               <p className="mt-4 text-zinc-400 leading-relaxed">
-                I believe in <span className="text-zinc-100 font-semibold">"AI as teammates, not tools"</span> -
-                building with soul, crediting all contributors, and creating applications that enhance human capability
+                I believe in <span className="text-zinc-100 font-semibold">"Human-Centric Innovation"</span> —
+                building with integrity, honoring all contributors, and creating applications that amplify human capability
                 rather than replace it. My apps bridge the gap between traditional architecture and modern digital innovation.
               </p>
               <p className="mt-4 text-zinc-400 leading-relaxed italic">

@@ -83,9 +83,9 @@ export default function ProfilePage() {
                 </p>
                 <p className="mt-4 text-zinc-400 leading-relaxed">
                   My unique approach bridges traditional architecture with cutting-edge technology. I believe in
-                  "AI as teammates, not tools" and focus on building systems with soul. My work combines deep domain
+                  "Human-Centric Innovation" and focus on building systems with integrity. My work combines deep domain
                   expertise in architecture with modern software development practices, creating innovative solutions
-                  that enhance both technical precision and creative expression.
+                  that amplify both technical precision and creative expression.
                 </p>
               </div>
             </Card>
@@ -427,7 +427,7 @@ export default function ProfilePage() {
                   <li>• <span className="text-zinc-100 font-semibold">BaseForge:</span> No-code database platform with Gantt charts for project management</li>
                 </ul>
                 <p className="mt-4 text-zinc-400 italic">
-                  Philosophy: "AI as teammates, not tools" - building systems with soul and crediting all contributors
+                  Philosophy: "Human-Centric Innovation" — building systems with integrity and crediting all contributors
                 </p>
               </div>
             </Card>
